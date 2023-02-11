@@ -1,0 +1,12 @@
+{
+	"authors": [
+		"linus"
+	],
+	"copyright": "Copyright © 2023, linus",
+	"dependencies": {
+		"elemi": "~>1.2.1"
+	},
+	"description": "A minimal D application.",
+	"license": "proprietary",
+	"name": "dtst"
+}
