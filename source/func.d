@@ -1,6 +1,8 @@
 module dtst.func;
 
 import elemi;
+import std.conv;
+import dtst.html;
 
 
 Element elemLink(string rel, string href, string id = "")
@@ -28,7 +30,7 @@ Element elemList(const string[2][] input...)
     return output;
 }
 
-Element sideBar(const string title, const string[2][] listInput...)
+Element sideBar(string title, const string[2][] listInput...)
 {
     Element output = elem!"div"(
 		attr("class") = "sidebar-left",
@@ -39,7 +41,7 @@ Element sideBar(const string title, const string[2][] listInput...)
     return output;
 }
 
-Element header(const string title)
+Element header(string title)
 {
     Element output = elem!"div"(
         attr("class") = "page-header",
@@ -49,5 +51,30 @@ Element header(const string title)
         ),
     );
 
+    return output;
+}
+
+string html(Element inputDocument, string pageTitle, string listTitle, const string[2][] listInput...)
+{
+    string output = text(
+        Element.HTMLDoctype,
+        elem!"html"(
+            headDOC,
+            elem!"body"(
+                attr("class") = ["body ", "body-theme"],
+                navbarDOC,
+                header(pageTitle),
+                elem!"div"(
+                    attr("class") = "wrap",
+
+                    elem!"div"(
+                        attr("class") = "main-content",
+                        inputDocument,
+                    ),
+                    sideBar(listTitle, listInput),
+                ),
+            ),
+        ),
+    );
     return output;
 }

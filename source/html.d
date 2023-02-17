@@ -5,11 +5,6 @@ import dtst.func;
 import std.conv;
 
 
-immutable string [2][] mainList = 
-[
-    ["fast.com", "Minecraft"],
-    ["fast.com", "Kolonie"],
-];
 
 immutable navbarDOC = elem!"nav"(
 	attr("class") = ["topnav", "topnav-theme"],
@@ -54,30 +49,20 @@ immutable headDOC = elem!"head"(
 	Element.EncodingUTF8,
 );
 
-immutable document = text(
-	Element.HTMLDoctype,
-	elem!"html"(
-		headDOC,
-		elem!"body"(
-			attr("class") = ["body ", "body-theme"],
+immutable testDocument = html(testDOC, "Szkoła Językowa", "Zajęcia", mainList);
 
-			navbarDOC,
-			header("Szkoła Językowa"),
-			elem!"div"(
-				attr("class") = "wrap",
+const string [2][] mainList = 
+[
+    ["fast.com", "Minecraft"],
+    ["fast.com", "Kolonie"],
+];
 
-				elem!"div"(
-					attr("class") = "main-content",
-					elem!"p"("bruh"),
-					elem!"p"("bruh"),
-					elem!"p"("bruh"),
-					elem!"p"("bruh"),
-					elem!"p"("bruh"),
-					elem!"p"("bruh"),
-					elem!"p"("bruh"),
-				),
-				sideBar("Zajęcia",mainList),
-			),
-		),
-	),
+immutable testDOC = elem!"div"(
+    elem!"p"("bruh"),
+    elem!"p"("bruh"),
+    elem!"p"("bruh"),
+    elem!"p"("bruh"),
+    elem!"p"("bruh"),
+    elem!"p"("bruh"),
+    elem!"p"("bruh"),
 );
