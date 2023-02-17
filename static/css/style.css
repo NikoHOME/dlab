@@ -1,0 +1,196 @@
+
+.body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.mode-button {
+  float: left;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+ .switch {
+  float: left;
+  position: relative;
+  margin-top: 5px;
+  width: 60px;
+  height: 34px;
+}
+
+#checkBox1 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#checkBox2{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: -4px;
+  left: -4px;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 6px;
+  bottom: 6px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #476075;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.page-header {
+  width: 100%;
+  background-color: #0661b9;
+  color: white;
+  position: relative;
+  margin-top: 80px;
+  height: 100px;
+  display: flex;
+  justify-content:center;
+}
+
+.container {
+  width: 1140px;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.side-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 13px;
+  font-weight: 700;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  list-style-type: none;
+}
+
+.list-elem {
+  margin: 8px 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: rgb(80, 80, 80);
+  outline: none;
+}
+
+
+
+
+/*Base Mobile Layout*/
+.wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-content, .sidebar-left {
+  padding-top: 40px;
+  width: 100%;
+  float: left;
+}
+
+/*3 Column Layout*/
+@media only screen and (min-width: 1024px) {
+  .wrap {
+    width: 1024px;
+    margin: 0 auto;
+  }
+  
+  .main-content {
+    width: 75%;
+    float: left;
+  }
+  
+  .sidebar-left {
+    width: 25%;
+    float: left;
+  }
+}
+
+/*Wide Layout*/
+@media only screen and (min-width: 1200px) {
+  .wrap {
+    width: 1140px;
+    margin: 0 auto;
+  }
+}
+
+/*Move Sidebar Position*/
+@media only screen and (min-width: 1024px) {
+  .wrap, .main-content, .sidebar-left {
+    position: relative;
+  }
+  
+  .main-content, .sidebar-left {
+    top: 0;
+  }
+  
+  .sidebar-left {
+    left: -75%; /*Width of #main-content*/
+  }
+  
+  .main-content {
+    left: 25%; /*Width of #left-sidebar*/
+  }
+}
+
+/*Optional 2 Column Layout*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .sidebar-left {
+    width: 50%;
+  }
+  .main-content {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}

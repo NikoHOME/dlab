@@ -1,0 +1,84 @@
+.body-theme {
+  background-color: white;;
+}
+
+
+hr.solid-theme {
+  border-top: 3px solid rgb(117, 128, 128);
+}
+
+.topnav-theme {
+  background-color: white;
+}
+
+.topnav-theme a-nav {
+  color: rgb(55, 71, 79);
+}
+
+.topnav-theme span {
+  color: rgb(55, 71, 79);
+}
+
+.topnav-theme a-nav:hover {
+  background-color: rgb(57, 54, 54);
+  color: white;
+}
+
+.topnav-theme a-nav.active {
+  background-color: slategray;
+  color: white;
+}
+
+
+.header-theme {
+    background-color: lightgrey;    
+}
+
+.content-theme{
+  color: rgb(55, 71, 79);
+  background-color: rgb(189, 181, 181);
+}
+
+
+.title-theme {
+    color: rgb(55, 71, 79);
+}
+
+.subtitle-theme {
+  color: rgb(55, 71, 79);
+}
+
+.footer-theme {
+    background-color:lightgrey;
+}
+
+
+.mode-button-theme {
+  color: rgb(140, 182, 204);
+}
+
+.sidenav-theme {
+  background-color: aliceblue;
+}
+
+.a-nav-theme {
+  color:  rgb(55, 71, 79);
+}
+
+.span-nav-theme {
+  color: rgb(55, 71, 79);
+  background-color: white;
+  width: 122px;
+  margin: 0;
+}
+
+.a-nav-theme:hover {
+  background-color: rgb(57, 54, 54);
+  color: rgb(255, 255, 255);
+}
+
+.a-nav-theme.active {
+  background-color: slategray;
+  color: white;
+}
+

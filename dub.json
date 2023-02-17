@@ -4,7 +4,10 @@
 	],
 	"copyright": "Copyright © 2023, linus",
 	"dependencies": {
-		"elemi": "~>1.2.1"
+		"arsd-official:cgi": "~>10.9.8",
+		"arsd-official:dom": "~>10.9.8",
+		"arsd-official:jsvar": "~>10.9.8",
+		"elemi": "~>1.2.2"
 	},
 	"description": "A minimal D application.",
 	"license": "proprietary",

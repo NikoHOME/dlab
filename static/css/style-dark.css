@@ -1,0 +1,86 @@
+
+
+
+.body-theme {
+  background-color: #171941;
+}
+
+hr.solid-theme {
+  border-top: 3px solid rgb(38, 40, 40);
+}
+
+
+.topnav-theme {
+  background-color: black;
+}
+
+.topnav-theme a-nav {
+  color: rgb(150, 190, 210);
+}
+
+.topnav-theme span {
+  color: rgb(140, 182, 204);
+}
+
+.topnav-theme a-nav:hover {
+  background-color: rgb(100, 154, 154);
+  color: black;
+}
+
+.topnav-theme a-nav.active {
+  background-color: rgb(98, 111, 124);
+  color: black;
+}
+
+.header-theme {
+    background-color: rgb(62, 62, 62);    
+}
+
+.content-theme{
+  color: rgb(195, 215, 225);
+  background-color: rgb(85, 80, 80);
+}
+
+
+.title-theme {
+    color: rgb(189, 213, 224);
+}
+
+.subtitle-theme {
+  color: rgb(188, 215, 229);
+}
+
+.footer-theme {
+    background-color:rgb(80, 80, 80);
+}
+
+
+.mode-button-theme {
+  color: rgb(51, 65, 72);
+}
+
+.sidenav-theme {
+  background-color: black;
+}
+
+.a-nav-theme {
+  color:  rgb(150, 190, 210);
+}
+
+.span-nav-theme {
+  color: rgb(140, 182, 204);
+  background-color: black;
+  width: 122px;
+  margin: 0;
+}
+
+.a-nav-theme:hover {
+  background-color: rgb(100, 154, 154);
+  color: rgb(0, 0, 0);
+}
+
+.a-nav-theme.active {
+  background-color: rgb(98, 111, 124);
+  color: white;
+}
+

@@ -1,34 +1,28 @@
 import elemi;
 import std.conv;
+import arsd.cgi;
+import dtst.func;
+import dtst.html;
 
-// HTML document
-auto document = text(
-    Element.HTMLDoctype,
-    elem!"html"(
+mixin GenericMain!handle;
 
-        elem!"head"(
-            elem!"title"("Hello, World!"),
-            Element.MobileViewport,
-            Element.EncodingUTF8,
-        ),
 
-        elem!"body"(
-            attr("class") = ["home", "logged-in"],
 
-            elem!"main"(
+void handle(Cgi cgi) 
+{
 
-                elem!"img"(
-                    attr("src") = "/logo.png",
-                    attr("alt") = "Website logo"
-                ),
+	if(cgi.dispatcher!(
+		"/".handleWith!defaultHandler,
+		"/static/css/".serveStaticFileDirectory,
+		"/static/img/".serveStaticFileDirectory,
+		"/static/js/".serveStaticFileDirectory
+	)) return;
+}
 
-                // All input is sanitized.
-                "<Welcome to my website!>"
+void defaultHandler(Cgi cgi)
+{
+	cgi.write(document);
+}
 
-            )
 
-        ),
 
-    ),
-
-);
