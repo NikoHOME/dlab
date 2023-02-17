@@ -1,7 +1,7 @@
-module dtst.html;
+module dlab.html;
 
 import elemi;
-import dtst.func;
+import dlab.func;
 import std.conv;
 
 

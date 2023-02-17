@@ -1,8 +1,8 @@
-module dtst.func;
+module dlab.func;
 
 import elemi;
 import std.conv;
-import dtst.html;
+import dlab.html;
 
 
 Element elemLink(string rel, string href, string id = "")

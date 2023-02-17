@@ -1,8 +1,8 @@
 import elemi;
 import std.conv;
 import arsd.cgi;
-import dtst.func;
-import dtst.html;
+import dlab.func;
+import dlab.html;
 
 mixin GenericMain!handle;
 
