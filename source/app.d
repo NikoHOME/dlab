@@ -13,6 +13,7 @@ void handle(Cgi cgi)
 	if(cgi.dispatcher!(
 		"/static/css/".serveStaticFileDirectory,
 		"/static/img/".serveStaticFileDirectory,
+		"/static/ppl/".serveStaticFileDirectory,
 		"/static/js/".serveStaticFileDirectory
 	)) return;
 	if(defaultHandler(cgi)) return;

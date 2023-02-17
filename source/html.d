@@ -12,7 +12,7 @@ immutable navbarDOC = elem!"nav"(
 		attr("class") = "container",
 		elem!"span"(
 			attr("class") = "span-nav",
-			"Language Laboratoris •"
+			"Language Laboratories •"
 		),
 		elem!"img"(
 			attr("src") = "static/img/sun.png",
@@ -67,7 +67,7 @@ immutable navbarDOC = elem!"nav"(
 );
 
 immutable headDOC = elem!"head"(
-	elem!"title"("Language Laboratoris •"),
+	elem!"title"("Language Laboratories •"),
 	elemLink("icon", "static/img/favicon.png"),
 	elemLink("stylesheet", "static/css/style.css"),
 	elemLink("stylesheet", "static/css/style-nav.css"),
@@ -96,11 +96,94 @@ immutable webHome = text(
                     attr("alt") = "logo"
                 )
             ),
-        
+			elem!"div"(
+				attr("class") = ["blueDiv", "whiteText",],
+			
+				elem!"div"(
+					attr("class") = ["container-text"],
+					elem!"h1"(
+						attr("class") = "boldH1",
+						"Language Laboratories ®"
+					),
+					elem!"h3"(
+						"Edukacja. Nauka. Tradycja."
+					),
+					elem!"h4"(
+						" Language Laboratories ® to jedna z pierwszych szkół językowych w Polsce. 
+						Założona w 1968 roku w Gdańsku przez dr Henrykę Szumilewicz oraz dr Benedykta Szumilewicza. 
+						Od września 2018 roku zajęcia odbywają się na terenie GKS Gedania 1922, budynek creoGedania. 
+						Właścicielem firmy jest Szymon Hofman."
+					),
+					elem!"h4"(
+						" Uczymy języków obcych na wszystkich poziomach zaawansowania dla dzieci, młodzieży i dorosłych. 
+						Placówka edukacyjno-badawcza opiera się o najnowsze światowe trendy w nauczaniu języków obcych."
+					),
+					elem!"h4"(
+						" Prowadzimy intensywne kursy ze specjalistami z wieloletnim doświadczeniem! 
+						Nauka języka angielskiego w oparciu o autorski program nauczania, który cechuje wysoka skuteczność. 
+						Pracujemy m.in. metodą immersji, w oparciu o relację wspomagającą, z zastosowaniem elementów robotyki, 
+						druku 3D, sztuki dyskusji i wielu innych narzędzi dydaktycznych, spersonalizowanych na rzecz dostosowania do potrzeb każdego ucznia. 
+						Podczas zajęć zostaną poruszone zagadnienia dzięki którym w krótkim czasie podniesiesz swoje kompetencje językowe; co więcej, 
+						otrzymasz informacje zwrotne jak masz się uczyć, aby zwiększyć swoją skuteczność."
+					)
+				),
+			),
+
+			elem!"div"(
+			
+				elem!"div"(
+					attr("class") = ["container-text"],
+					elem!"h1"(
+						attr("class") = "boldH1",
+						"Language Laboratories ® Kadra"
+					),
+					elem!"h3"(
+						" współpracujemy od lat z doświadczonymi ekspertami"
+					)
+					
+				),
+			),
+			
+			elem!"div"(
+				attr("class") = "container",
+				kadraCard("NADZÓR MERYTORYCZNY","static/ppl/agataHof.webp", elem!"span"(
+					makeBold("dr Agata Hofman"),
+					"- twórca programu nauczania i dyrektor w Przedszkolu Gedania 1922 oraz placówce edukacyjnej creoGedania. 
+					Właścicel Language Laboratories, jednej z najstarszych szkół językowych w Polsce, 
+					która wprowadza innowacyjne programy nauczania języków obcych z wykorzystaniem ICT od 1968 roku. 
+					Jest również autorem 2 książek oraz ponad 40 publikacji na temat nauczania języków obcych. 
+					W 2009 roku zainicjowała ona projekt Polska Akademia Dzieci. "
+				)),
+				cardDividerDOC,
+				kadraCard("LEKTOR, SPECJALISTA","static/ppl/jacJed.webp", elem!"span"(
+					makeBold("mgr Jacek Jędrzejczak "),
+					"lektor Language Laboratories", makeBold("od 28 lat")," 
+					ma ogromne doświadczenie w pracy z osobami dorosłymi i środowiskami biznesowymi. 
+					Autorskie programy, język biznesu i płynna komunikacja 
+					to jedne z wielu cech charakterystycznych zajęć prowadzonych przez tego lektora 
+					z tak bogatym doświadczeniem w indywidualnym nauczaniu języka angielskiego. "
+				)),
+			),
+			elem!"div"(
+				attr("class") = "container",
+				kadraCard("LEKTOR, SPECJALISTA","static/ppl/jacJed.webp", elem!"span"(
+					makeBold("mgr Jacek Jędrzejczak "),
+					"lektor Language Laboratories", makeBold("od 28 lat")," 
+					ma ogromne doświadczenie w pracy z osobami dorosłymi i środowiskami biznesowymi. 
+					Autorskie programy, język biznesu i płynna komunikacja 
+					to jedne z wielu cech charakterystycznych zajęć prowadzonych przez tego lektora 
+					z tak bogatym doświadczeniem w indywidualnym nauczaniu języka angielskiego. "
+				)),
+			),
         ),
     ),
 );
 
+
+
+immutable cardDividerDOC = elem!"div"(
+	attr("class") = "card-divider"
+);
 
 
 

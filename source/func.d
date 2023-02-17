@@ -4,6 +4,12 @@ import elemi;
 import std.conv;
 import dlab.html;
 
+Element makeBold(string text)
+{
+    return elem!"strong"(
+        text
+    );
+}
 
 Element elemLink(string rel, string href, string id = "")
 {
@@ -11,6 +17,15 @@ Element elemLink(string rel, string href, string id = "")
 		attr("rel") = rel,
 		attr("href") = href,
 		attr("id") = id,
+	);
+}
+
+Element elemImg(string src, string alt, string oneClass = "")
+{
+	return elem!"img"(
+		attr("src") = src,
+		attr("alt") = alt,
+        attr("class") = oneClass,
 	);
 }
 
@@ -70,5 +85,27 @@ string page(Element inputDocument, string pageTitle, const string[2][] listInput
                 ),
             ),
         ),
+    );
+}
+
+Element kadraCard(string title, string src, Element textElement)
+{
+    return 	elem!"div"(
+        attr("class") = ["card", "card-theme"],
+        elem!"div"(
+            attr("class") = "card-body",
+        
+            elemImg(src, "kadra"),
+            elem!"div"(
+                attr("class") = "card-text-top-lec",
+                elem!"h1"(
+                    makeBold(title)
+                )
+            ),
+            elem!"div"(
+                attr("class") = "card-text-middle-lec",
+                textElement
+            ),
+        )
     );
 }
