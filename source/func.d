@@ -7,12 +7,11 @@ import dlab.html;
 
 Element elemLink(string rel, string href, string id = "")
 {
-	Element output = elem!"link"(
+	return elem!"link"(
 		attr("rel") = rel,
 		attr("href") = href,
 		attr("id") = id,
 	);
-	return output;
 }
 
 Element elemList(const string[2][] input...)
@@ -32,31 +31,27 @@ Element elemList(const string[2][] input...)
 
 Element sideBar(string title, const string[2][] listInput...)
 {
-    Element output = elem!"div"(
+    return elem!"div"(
 		attr("class") = "sidebar-left",
         elem!"h2"(attr("class") = "side-title", title),
         elemList(listInput),
     );
-
-    return output;
 }
 
 Element header(string title)
 {
-    Element output = elem!"div"(
+    return elem!"div"(
         attr("class") = "page-header",
         elem!"div"(
             attr("class") = "container",
             elem!"h1"(attr("class") = "title", title )
         ),
     );
-
-    return output;
 }
 
-string html(Element inputDocument, string pageTitle, string listTitle, const string[2][] listInput...)
+string page(Element inputDocument, string pageTitle, const string[2][] listInput...)
 {
-    string output = text(
+    return text(
         Element.HTMLDoctype,
         elem!"html"(
             headDOC,
@@ -71,10 +66,9 @@ string html(Element inputDocument, string pageTitle, string listTitle, const str
                         attr("class") = "main-content",
                         inputDocument,
                     ),
-                    sideBar(listTitle, listInput),
+                    sideBar("Zajęcia", listInput),
                 ),
             ),
         ),
     );
-    return output;
 }

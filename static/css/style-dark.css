@@ -14,7 +14,7 @@ hr.solid-theme {
   background-color: black;
 }
 
-.topnav-theme a-nav {
+.a-nav {
   color: rgb(150, 190, 210);
 }
 
@@ -22,12 +22,8 @@ hr.solid-theme {
   color: rgb(140, 182, 204);
 }
 
-.topnav-theme a-nav:hover {
-  background-color: rgb(100, 154, 154);
-  color: black;
-}
 
-.topnav-theme a-nav.active {
+.a-nav.active {
   background-color: rgb(98, 111, 124);
   color: black;
 }
@@ -83,4 +79,6 @@ hr.solid-theme {
   background-color: rgb(98, 111, 124);
   color: white;
 }
+
+
 

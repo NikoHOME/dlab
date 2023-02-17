@@ -30,9 +30,38 @@ immutable navbarDOC = elem!"nav"(
 		),
 		elem!"div"(attr("class") = "spacer-middle"),
 		elem!"a"(
-			attr("class") = ["a-nav", "a-nav-theme", "active"],
-			attr("href") = "#Home",
+			attr("class") = ["a-nav", "a-nav-theme"],
+			attr("href") = "/#Home",
 			"Front"
+		),
+		elem!"div"(
+			attr("class") = "dropdown-div",
+			elem!"a"(
+				attr("class") = ["a-nav", "a-nav-theme"],
+				attr("href") = "/#Zajęcia",
+				"Zajęcia"
+			),
+			elem!"div"(
+				attr("class") = "dropdown-content",
+				elem!"a"(
+					attr("class") = "anim1",
+					attr("href") = "/minecraft",
+					"Minecraft",
+				),
+				elem!"a"(
+					attr("class") = "anim2",
+					attr("href") = "/kolonie",
+					"Kolonie",
+				),
+				
+			),
+		
+		
+		),
+		elem!"a"(
+			attr("class") = ["a-nav", "a-nav-theme"],
+			attr("href") = "/kontakt",
+			"Kontakt"
 		),
 	)
 );
@@ -42,6 +71,8 @@ immutable headDOC = elem!"head"(
 	elemLink("icon", "static/img/favicon.png"),
 	elemLink("stylesheet", "static/css/style.css"),
 	elemLink("stylesheet", "static/css/style-nav.css"),
+    elemLink("stylesheet", "static/css/style-home.css"),
+	elemLink("stylesheet", "static/css/style-dropdown.css"),
 	elemLink("stylesheet", "static/css/style-light.css", "cssLight"),
 	elem!"script"(attr("src") = "static/js/jquery-1.11.2.min.js"),
 	elem!"script"(attr("src") = "static/js/main.js"),
@@ -49,12 +80,40 @@ immutable headDOC = elem!"head"(
 	Element.EncodingUTF8,
 );
 
-immutable testDocument = html(testDOC, "Szkoła Językowa", "Zajęcia", mainList);
+immutable webHome = text(
+    Element.HTMLDoctype,
+    elem!"html"(
+        headDOC,
+        elem!"body"(
+            attr("class") = ["body ", "body-theme"],
+            navbarDOC,
+            header("Lanlab"),
+
+            elem!"div"(
+                attr("class") = "banner",
+                elem!"img"(
+                    attr("src") = "static/img/logo.jpeg",
+                    attr("alt") = "logo"
+                )
+            ),
+        
+        ),
+    ),
+);
+
+
+
+
+immutable webMinecraft = page(testDOC, "Minecraft nauka angielskiego",  mainList);
+immutable webKolonie = page(testDOC, "Półkolonie Mind-Craft", mainList);
+immutable webKontakt = page(testDOC, "Kontakt", mainList);
+
+
 
 const string [2][] mainList = 
 [
-    ["fast.com", "Minecraft"],
-    ["fast.com", "Kolonie"],
+    ["minecraft", "Minecraft"],
+    ["kolonie", "Kolonie"],
 ];
 
 immutable testDOC = elem!"div"(

@@ -25,7 +25,16 @@ bool defaultHandler(Cgi cgi)
 	switch(cgi.pathInfo)
 	{
 		case "/":
-			cgi.write(testDocument);
+			cgi.write(webHome);
+			break;
+		case "/kolonie":
+			cgi.write(webMinecraft);
+			break;
+		case "/minecraft":
+			cgi.write(webKolonie);
+			break;
+		case "/kontakt":
+			cgi.write(webKontakt);
 			break;
 		default:
 			cgi.setResponseStatus("404");

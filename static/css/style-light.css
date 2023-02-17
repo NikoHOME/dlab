@@ -11,7 +11,7 @@ hr.solid-theme {
   background-color: white;
 }
 
-.topnav-theme a-nav {
+.a-nav {
   color: rgb(55, 71, 79);
 }
 
@@ -19,12 +19,8 @@ hr.solid-theme {
   color: rgb(55, 71, 79);
 }
 
-.topnav-theme a-nav:hover {
-  background-color: rgb(57, 54, 54);
-  color: white;
-}
 
-.topnav-theme a-nav.active {
+.a-nav.active {
   background-color: slategray;
   color: white;
 }
