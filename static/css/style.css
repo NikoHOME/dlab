@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .mode-button {

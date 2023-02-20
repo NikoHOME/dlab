@@ -3,6 +3,7 @@ import std.conv;
 import arsd.cgi;
 import dlab.func;
 import dlab.html;
+import dlab.kadra;
 
 mixin GenericMain!handle;
 
@@ -29,13 +30,19 @@ bool defaultHandler(Cgi cgi)
 			cgi.write(webHome);
 			break;
 		case "/kolonie":
-			cgi.write(webMinecraft);
+			cgi.write(webKolonie);
 			break;
 		case "/minecraft":
-			cgi.write(webKolonie);
+			cgi.write(webMinecraft);
 			break;
 		case "/kontakt":
 			cgi.write(webKontakt);
+			break;
+		case "/wymagania":
+			cgi.write(webWymagania);
+			break;
+		case "/kadra/wikgaw":
+			cgi.write(webKadraWikGaw);
 			break;
 		default:
 			cgi.setResponseStatus("404");

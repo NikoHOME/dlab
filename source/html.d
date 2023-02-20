@@ -15,7 +15,7 @@ immutable navbarDOC = elem!"nav"(
 			"Language Laboratories •"
 		),
 		elem!"img"(
-			attr("src") = "static/img/sun.png",
+			attr("src") = "/static/img/sun.png",
 			attr("id") = "modeImg1",
 			attr("alt") = "sun"
 		),
@@ -68,14 +68,15 @@ immutable navbarDOC = elem!"nav"(
 
 immutable headDOC = elem!"head"(
 	elem!"title"("Language Laboratories •"),
-	elemLink("icon", "static/img/favicon.png"),
-	elemLink("stylesheet", "static/css/style.css"),
-	elemLink("stylesheet", "static/css/style-nav.css"),
-    elemLink("stylesheet", "static/css/style-home.css"),
-	elemLink("stylesheet", "static/css/style-dropdown.css"),
-	elemLink("stylesheet", "static/css/style-light.css", "cssLight"),
-	elem!"script"(attr("src") = "static/js/jquery-1.11.2.min.js"),
-	elem!"script"(attr("src") = "static/js/main.js"),
+	elemLink("icon", "/static/img/favicon.png"),
+	elemLink("stylesheet", "/static/css/style.css"),
+	elemLink("stylesheet", "/static/css/style-nav.css"),
+    elemLink("stylesheet", "/static/css/style-home.css"),
+	elemLink("stylesheet", "/static/css/style-dropdown.css"),
+	elemLink("stylesheet", "/static/css/style-page.css"),
+	elemLink("stylesheet", "/static/css/style-light.css", "cssLight"),
+	elem!"script"(attr("src") = "/static/js/jquery-1.11.2.min.js"),
+	elem!"script"(attr("src") = "/static/js/main.js"),
 	Element.MobileViewport,
 	Element.EncodingUTF8,
 );
@@ -187,19 +188,21 @@ immutable cardDividerDOC = elem!"div"(
 
 
 
-immutable webMinecraft = page(testDOC, "Minecraft nauka angielskiego",  mainList);
+immutable webMinecraft = page(minecraftDOC, "Minecraft nauka angielskiego",  mainList);
 immutable webKolonie = page(testDOC, "Półkolonie Mind-Craft", mainList);
 immutable webKontakt = page(testDOC, "Kontakt", mainList);
+immutable webWymagania = page(specDOC, "Wymagania sprzętowe", mainList);
 
 
 
 const string [2][] mainList = 
 [
-    ["minecraft", "Minecraft"],
-    ["kolonie", "Kolonie"],
+    ["/minecraft", "Minecraft"],
+    ["/kolonie", "Kolonie"],
 ];
 
 immutable testDOC = elem!"div"(
+	attr("class") = "mainPageDiv",
     elem!"p"("bruh"),
     elem!"p"("bruh"),
     elem!"p"("bruh"),
@@ -207,4 +210,121 @@ immutable testDOC = elem!"div"(
     elem!"p"("bruh"),
     elem!"p"("bruh"),
     elem!"p"("bruh"),
+);
+
+immutable specDOC = elem!"div"(
+	attr("class") = "mainPageDiv",
+	elem!"p"(
+		"Podstawowe elementy",	
+		elem!"ol"(
+			elem!"li"(
+				"Połączenie z internetem najlepiej przez kabel"
+			),
+				elem!"li"(
+				"Sprawny mikrofon"
+			),
+			elem!"li"(
+				"Sprawne słuchawki lub głośniki"
+			),
+		)
+	),
+	elem!"p"(
+		"Rekomendowana minimalna specyfikacja komputera",
+		elem!"ol"(
+			elem!"li"(
+				"8GB Ram-u"
+			),
+			elem!"li"(
+				"4 rdzeniowy procesor"
+			),
+		)
+	),
+	elem!"p"(
+		"Programy do zainstalowania",
+		elem!"ol"(
+			elem!"li"(
+				"Minecraft Launcher - oficjalny launcher gry"
+			),
+			elem!"li"(
+				"Discord (Opcjonalnie) - preferowana platforma do komunikacji z uczniem"
+			),
+			elem!"li"(
+				"Team Viewer (Opcjonalnie) - program do zdalnej pomocy technicznej"
+			),
+		)
+	),
+	elem!"h4"(
+		"W przypadku wątpliwości lub problemów technicznych służymy pomocą."
+	),
+	elem!"h4"(
+		"Tel : "
+	)
+);
+
+immutable minecraftDOC = elem!"div"(
+	attr("class") = "mainPageDiv",
+	elem!"h2"(
+		"Zajęcia z angielskiego, które twoje dziecko pokocha."
+	),
+	elem!"h3"(
+		"Grupa docelowa 7-13 lat"
+	),
+	elem!"h3"(
+		"Czas trwania lekcji 60 minut"
+	),
+	elem!"p"(
+		"Opłaty",
+		elem!"ol"(
+			elem!"li"(
+				elem!"a"(
+					attr("href") = "/kadra/szyhof",
+					"Szymon Hoffman "
+				),
+				"- 50 zł / Lekcję"
+			),
+			elem!"li"(
+				elem!"a"(
+					attr("href") = "/kadra/wikgaw",
+					"Wiktor Gawroński "
+				),
+				"- 40 zł / Lekcję"
+			),
+		)
+	),
+	elem!"h4"(
+		"Lecje dla dzieci są prowadzone w środowisku gry, żeby zachęcić ucznia do kożystania z języka angielskiego.
+		Lużna forma zajęć pozwala na oswojenie się z językiem i pozbyciu się nieśmiałości w jego używania."
+	),
+	elem!"h4"(
+		"Treści oraz konwersacje w trakcie zajęć dopasowane są do zainteresowań oraz wieku ucznia, lub aktualnych wydarzeń."
+	),
+	elem!"p"(
+		"Cele zajęć",
+		elem!"ol"(
+			elem!"li"(
+				"Sprawna komunikacja dwustronna w języku angielskim"
+			),
+			elem!"li"(
+				"Umiejętność prowadzenia luźnej konwersacji"
+			),
+			elem!"li"(
+				"Rozwój kreatywnego myślenia i umiejętności planowania"
+			),
+		)
+	),
+	elem!"p"(
+		"Wymagania",
+		elem!"ol"(
+			elem!"li"(
+				"Sprawny komputer do gry i komunikacji ",
+				elem!"a"(
+					attr("href") = "wymagania",
+					makeBold("Dokładna specyfikacja")
+				),
+			),
+			elem!"li"(
+				"Konto Minecraft"
+			),
+		)
+	),
 );

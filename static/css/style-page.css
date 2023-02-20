@@ -1,0 +1,21 @@
+.mainPageDiv {
+    color: rgb(100, 100, 100);
+}
+
+.mainPageDiv h2 {
+    color: #0661b9;
+}
+.mainPageDiv h3 {
+    color: #0661b9;
+}
+.mainPageDiv h4 {
+    color: dimgray;
+}
+.mainPageDiv p {
+    color: darkcyan;
+}
+
+.mainPageDiv a {
+    color:darkslateblue;
+    text-decoration: underline;
+}
