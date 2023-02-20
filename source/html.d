@@ -292,8 +292,8 @@ immutable minecraftDOC = elem!"div"(
 		)
 	),
 	elem!"h4"(
-		"Lecje dla dzieci są prowadzone w środowisku gry, żeby zachęcić ucznia do kożystania z języka angielskiego.
-		Lużna forma zajęć pozwala na oswojenie się z językiem i pozbyciu się nieśmiałości w jego używania."
+		"Lekcje dla dzieci są prowadzone w środowisku gry, żeby zachęcić ucznia do kożystania z języka angielskiego.
+		Luźna forma zajęć pozwala na oswojenie się z językiem i pozbyciu się nieśmiałości w jego używania."
 	),
 	elem!"h4"(
 		"Treści oraz konwersacje w trakcie zajęć dopasowane są do zainteresowań oraz wieku ucznia, lub aktualnych wydarzeń."
