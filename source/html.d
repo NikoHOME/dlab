@@ -280,14 +280,12 @@ immutable minecraftDOC = elem!"div"(
 					attr("href") = "/kadra/szyhof",
 					"Szymon Hoffman "
 				),
-				"- 50 zł / Lekcję"
 			),
 			elem!"li"(
 				elem!"a"(
 					attr("href") = "/kadra/wikgaw",
 					"Wiktor Gawroński "
-				),
-				"- 40 zł / Lekcję"
+				)
 			),
 		)
 	),
