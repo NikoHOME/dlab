@@ -10,9 +10,11 @@
     text-align: center;
 }
 
-img {
-    height: 100%;
+.banner img {
+    width: 100%;
+    height: auto;
     max-height: 400px;
+    max-width: 400px;
 }
 
 .boldH1 {
