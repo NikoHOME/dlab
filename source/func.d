@@ -99,6 +99,7 @@ Element kadraCard(string title, string src, Element textElement)
             elem!"div"(
                 attr("class") = "card-text-top-lec",
                 elem!"h1"(
+                    attr("class") = "cardH1",
                     makeBold(title)
                 )
             ),

@@ -173,7 +173,7 @@
     .burger-title {
         display: block;
     }
-    .container {
+    .topnav .container {
         display: none;
     }
 }

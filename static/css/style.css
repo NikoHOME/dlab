@@ -206,3 +206,27 @@ a, a:visited {
     left: 0;
   }
 }
+
+
+
+@media only screen and (max-width: 900px) {
+  body {
+    font-size: 80% !important;
+  }
+  .boldH1 {
+    font-size: 35px !important;
+  }
+  .card-text-middle-lec {
+    height: 75px !important;
+    font-size: 12px !important;
+  }
+  .cardH1 {
+    font-size: 29px !important;
+  }
+
+  .card {
+    max-width: 360px !important;
+    height: 540px !important;
+  }
+  
+}

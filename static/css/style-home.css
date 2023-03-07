@@ -43,6 +43,9 @@ img {
 .card img {
     width: 100%;
 }
+.cardH1 {
+    font-size: 35px;
+}
 
 .card-text-top-lec {
     height: 100px;
