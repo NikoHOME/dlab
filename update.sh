@@ -1,5 +1,6 @@
 FILE="../lanlab-web"
 if [ -d "$FILE" ]; then
+    git pull
     rm -rf ${FILE}/static
     cp -rf static ${FILE}
     cp -f dlab ${FILE}
