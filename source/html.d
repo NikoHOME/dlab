@@ -9,6 +9,69 @@ import std.conv;
 immutable navbarDOC = elem!"nav"(
 	attr("class") = ["topnav", "topnav-theme"],
 	elem!"div"(
+		attr("class") = "burger-div",
+		elem!"nav"(
+			attr("role") = "navigation",
+			elem!"div"(
+				attr("id") = "menuToggle",
+				elem!"input"(
+					attr("type") = "checkbox",
+				),
+				elem!"span"(),
+				elem!"span"(),
+				elem!"span"(),
+
+				elem!"ul"(
+					attr("id") = "menu",
+					/*
+					elem!"img"(
+						attr("src") = "/static/img/sun.png",
+						attr("id") = "modeImg1",
+						attr("alt") = "sun"
+					),
+					elem!"label"(
+						attr("class") = "switch",
+						elem!"input"(
+							attr("id") = "checkBox1",
+							attr("type") = "checkbox",
+							attr("onclick") = "manageModes();",
+						),
+						elem!"span"(attr("class") = "slider"),
+					),
+					*/
+					elem!"a"(
+						attr("href") = "/#Home",
+						elem!"li"(
+							"Front"
+						),
+					),
+					elem!"a"(
+						attr("href") = "/kontakt",
+						elem!"li"(
+							"Kontakt"
+						),
+					),
+					elem!"a"(
+						attr("href") = "/minecraft",
+						elem!"li"(
+							"Minecraft"
+						),
+					),
+					elem!"a"(
+						attr("href") = "/kolonie",
+						elem!"li"(
+							"Kolonie"
+						),
+					),
+				),
+			),
+		),
+	),
+	elem!"span"(
+		attr("class") = ["span-nav", "burger-title"],
+		"Language Laboratories •"
+	),	
+	elem!"div"(
 		attr("class") = "container",
 		elem!"span"(
 			attr("class") = "span-nav",
@@ -73,6 +136,7 @@ immutable headDOC = elem!"head"(
 	elemLink("stylesheet", "/static/css/style-nav.css"),
     elemLink("stylesheet", "/static/css/style-home.css"),
 	elemLink("stylesheet", "/static/css/style-dropdown.css"),
+	elemLink("stylesheet", "/static/css/style-burger.css"),
 	elemLink("stylesheet", "/static/css/style-page.css"),
 	elemLink("stylesheet", "/static/css/style-light.css", "cssLight"),
 	elem!"script"(attr("src") = "/static/js/jquery-1.11.2.min.js"),
