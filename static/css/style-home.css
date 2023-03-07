@@ -34,13 +34,16 @@
 
 .card {
     border: 0;
-    margin-left: 35px;
-    margin-right: 35px;
     height: 680px;
     width: 100%;
     max-width: 480px;
     margin-bottom: 30px;
     box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.1)
+}
+
+.card-divider{
+    max-width: 30px;
+    width: 100%;
 }
 
 .card img {
@@ -56,10 +59,6 @@
 }
 .card-body {
     padding: 15px;
-}
-
-.card-divider {
-    width: 180px;
 }
 .card-text-middle-lec {
     text-align: left !important;
