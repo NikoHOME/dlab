@@ -282,10 +282,10 @@ immutable minecraftDOC = elem!"div"(
 				),
 			),
 			elem!"li"(
-				elem!"a"(
+				elem!"a"( 
 					attr("href") = "/kadra/wikgaw",
 					"Wiktor Gawroński "
-				)
+				),
 			),
 		)
 	),
