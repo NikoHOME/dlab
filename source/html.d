@@ -146,7 +146,7 @@ immutable webHome = text(
 			),
 			
 			elem!"div"(
-				attr("class") = "container",
+				attr("class") = "card-container",
 				kadraCard("NADZÓR MERYTORYCZNY","static/ppl/agataHof.webp", elem!"span"(
 					makeBold("dr Agata Hofman"),
 					"- twórca programu nauczania i dyrektor w Przedszkolu Gedania 1922 oraz placówce edukacyjnej creoGedania. 
@@ -155,7 +155,6 @@ immutable webHome = text(
 					Jest również autorem 2 książek oraz ponad 40 publikacji na temat nauczania języków obcych. 
 					W 2009 roku zainicjowała ona projekt Polska Akademia Dzieci. "
 				)),
-				cardDividerDOC,
 				kadraCard("LEKTOR, SPECJALISTA","static/ppl/jacJed.webp", elem!"span"(
 					makeBold("mgr Jacek Jędrzejczak "),
 					"lektor Language Laboratories", makeBold("od 28 lat")," 
@@ -166,7 +165,7 @@ immutable webHome = text(
 				)),
 			),
 			elem!"div"(
-				attr("class") = "container",
+				attr("class") = "card-container",
 				kadraCard("LEKTOR, SPECJALISTA","static/ppl/jacJed.webp", elem!"span"(
 					makeBold("mgr Jacek Jędrzejczak "),
 					"lektor Language Laboratories", makeBold("od 28 lat")," 
