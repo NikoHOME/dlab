@@ -74,7 +74,7 @@ immutable navbarDOC = elem!"nav"(
 	elem!"div"(
 		attr("class") = "container",
 		elem!"img"(
-			attr("src") = "/static/img/logo.png",
+			attr("src") = "/static/img/logo.jpeg",
 			attr("alt") = "logo",
 		),
 		elem!"span"(
