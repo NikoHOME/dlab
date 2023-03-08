@@ -237,4 +237,6 @@ a, a:visited {
 .banner-test {
   height: 700px !important;
   max-height: 700px !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }

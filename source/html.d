@@ -73,6 +73,10 @@ immutable navbarDOC = elem!"nav"(
 	),	
 	elem!"div"(
 		attr("class") = "container",
+		elem!"img"(
+			attr("src") = "/static/img/logo.png",
+			attr("alt") = "logo",
+		),
 		elem!"span"(
 			attr("class") = "span-nav",
 			"Language Laboratories •"
