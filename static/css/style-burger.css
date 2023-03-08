@@ -14,7 +14,7 @@
    display: block;
    position: relative;
    top: 50px;
-   left: 50px;
+   left: 40px;
    
    z-index: 1;
    
@@ -166,6 +166,7 @@
 }
 
 
+
  @media only screen and (max-width: 800px) {
     .burger-div {
         display: block;
@@ -176,4 +177,16 @@
     .topnav .container {
         display: none;
     }
+}
+
+@media only screen and (max-width: 600px) {
+  #menuToggle{
+    left: 30px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #menuToggle{
+    left: 20px;
+  }
 }

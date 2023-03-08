@@ -1,7 +1,7 @@
 .topnav {
   position: sticky; 
   display: flex;
-  height: 80px;
+  min-height: 80px;
   background-position: 30px;
   align-items: center;
   top: 0; 
