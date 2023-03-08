@@ -157,7 +157,8 @@ immutable webHome = text(
             elem!"div"(
                 attr("class") = "banner",
                 elem!"img"(
-                    attr("src") = "static/img/logo.jpeg",
+					attr("class") = "test",
+                    attr("src") = "static/img/test.png",
                     attr("alt") = "logo"
                 )
             ),
