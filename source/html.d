@@ -171,19 +171,23 @@ immutable webHome = text(
 						"Language Laboratories ®"
 					),
 					elem!"h3"(
+						attr("class") = "padding",
 						"Edukacja. Nauka. Tradycja."
 					),
 					elem!"h4"(
+						attr("class") = "padding",
 						" Language Laboratories ® to jedna z pierwszych szkół językowych w Polsce. 
 						Założona w 1968 roku w Gdańsku przez dr Henrykę Szumilewicz oraz dr Benedykta Szumilewicza. 
 						Od września 2018 roku zajęcia odbywają się na terenie GKS Gedania 1922, budynek creoGedania. 
 						Właścicielem firmy jest Szymon Hofman."
 					),
 					elem!"h4"(
+						attr("class") = "padding",
 						" Uczymy języków obcych na wszystkich poziomach zaawansowania dla dzieci, młodzieży i dorosłych. 
 						Placówka edukacyjno-badawcza opiera się o najnowsze światowe trendy w nauczaniu języków obcych."
 					),
 					elem!"h4"(
+						attr("class") = "padding",
 						" Prowadzimy intensywne kursy ze specjalistami z wieloletnim doświadczeniem! 
 						Nauka języka angielskiego w oparciu o autorski program nauczania, który cechuje wysoka skuteczność. 
 						Pracujemy m.in. metodą immersji, w oparciu o relację wspomagającą, z zastosowaniem elementów robotyki, 
@@ -203,6 +207,7 @@ immutable webHome = text(
 						"Language Laboratories ® Kadra"
 					),
 					elem!"h3"(
+						attr("class") = "padding",
 						" współpracujemy od lat z doświadczonymi ekspertami"
 					)
 					
