@@ -87,8 +87,6 @@ input:checked + .slider:before {
 .container {
   width: 1140px;
   max-width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -98,8 +96,6 @@ input:checked + .slider:before {
 .container-text {
   width: 1140px;
   max-width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
