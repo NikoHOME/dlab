@@ -155,7 +155,7 @@ immutable webHome = text(
             header("Lanlab"),
 
             elem!"div"(
-                attr("class") = "banner",
+                attr("class") = ["banner" ,"banner-test"],
                 elem!"img"(
 					attr("class") = "test",
                     attr("src") = "static/img/test.png",

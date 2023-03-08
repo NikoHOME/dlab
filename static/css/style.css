@@ -233,3 +233,8 @@ a, a:visited {
   max-height: 100% !important;
   max-width: none !important;
 }
+
+.banner-test {
+  height: 700px !important;
+  max-height: 700px !important;
+}
