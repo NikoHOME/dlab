@@ -73,3 +73,8 @@
   top: 0;
 }
 
+.nav-logo {
+  object-fit: contain;
+  margin-right: 10px;
+}
+

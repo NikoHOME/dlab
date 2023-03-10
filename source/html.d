@@ -52,15 +52,21 @@ immutable navbarDOC = elem!"nav"(
 						),
 					),
 					elem!"a"(
-						attr("href") = "/minecraft",
+						attr("href") = "#homeMinecraft",
 						elem!"li"(
 							"Minecraft"
 						),
 					),
 					elem!"a"(
-						attr("href") = "/kolonie",
+						attr("href") = "#homeKolonie",
 						elem!"li"(
 							"Kolonie"
+						),
+					),
+					elem!"a"(
+						attr("href") = "#homeStacjonarne",
+						elem!"li"(
+							"Stacjonarne"
 						),
 					),
 				),
@@ -74,7 +80,8 @@ immutable navbarDOC = elem!"nav"(
 	elem!"div"(
 		attr("class") = "container",
 		elem!"img"(
-			attr("src") = "/static/img/logo.jpeg",
+			attr("class") = "nav-logo",
+			attr("src") = "/static/img/logoNoText.jpeg",
 			attr("alt") = "logo",
 		),
 		elem!"span"(
@@ -105,20 +112,25 @@ immutable navbarDOC = elem!"nav"(
 			attr("class") = "dropdown-div",
 			elem!"a"(
 				attr("class") = ["a-nav", "a-nav-theme"],
-				attr("href") = "/#Zajęcia",
+				attr("href") = "/#Oferty",
 				"Zajęcia"
 			),
 			elem!"div"(
 				attr("class") = "dropdown-content",
 				elem!"a"(
 					attr("class") = "anim1",
-					attr("href") = "/minecraft",
+					attr("href") = "#homeMinecraft",
 					"Minecraft",
 				),
 				elem!"a"(
 					attr("class") = "anim2",
-					attr("href") = "/kolonie",
+					attr("href") = "#homeKolonie",
 					"Kolonie",
+				),
+				elem!"a"(
+					attr("class") = "anim1",
+					attr("href") = "#homeStacjonarne",
+					"Stacjonarne",
 				),
 				
 			),
@@ -139,6 +151,8 @@ immutable headDOC = elem!"head"(
 	elemLink("stylesheet", "/static/css/style.css"),
 	elemLink("stylesheet", "/static/css/style-nav.css"),
     elemLink("stylesheet", "/static/css/style-home.css"),
+	elemLink("stylesheet", "/static/css/style-footer.css"),
+	elemLink("stylesheet", "/static/css/style-offer.css"),
 	elemLink("stylesheet", "/static/css/style-dropdown.css"),
 	elemLink("stylesheet", "/static/css/style-burger.css"),
 	elemLink("stylesheet", "/static/css/style-page.css"),
@@ -166,6 +180,167 @@ immutable webHome = text(
                     attr("alt") = "logo"
                 )
             ),
+		
+			elem!"div"(
+				attr("id") = "Oferty",
+				elem!"h1"(
+					attr("class") = "offer-h1",
+					"Oferty"
+				),	
+				elem!"div"(
+					attr("class") = ["offer", "offer-right"],
+					attr("id") = "homeMinecraft",
+					elem!"img"(
+						attr("src") = "/static/img/blank.png",
+						attr("alt") = "blank"
+					),
+					elem!"div"(
+						attr("class") = "offer-text",
+						elem!"h2"(
+							"Minecraft Angielski"
+						),
+						elem!"h3"(
+							"Grupa docelowa 7-13 lat"
+						),
+						elem!"h3"(
+							"Czas trwania lekcji 60 minut"
+						),
+						elem!"p"(
+							"Cele zajęć",
+							elem!"ol"(
+								elem!"li"(
+									"Sprawna komunikacja dwustronna w języku angielskim"
+								),
+								elem!"li"(
+									"Umiejętność prowadzenia luźnej konwersacji"
+								),
+								elem!"li"(
+									"Rozwój kreatywnego myślenia i umiejętności planowania"
+								),
+							)
+						),
+					),
+				),
+				elem!"div"(
+					attr("class") = ["offer", "offer-left"],
+					attr("id") = "homeKolonie",
+					elem!"img"(
+						attr("src") = "/static/img/blank.png",
+						attr("alt") = "blank"
+					),
+					elem!"div"(
+						attr("class") = "offer-text",
+						elem!"h2"(
+							"Pół kolonie"
+						),
+						elem!"h3"(
+							"Grupa docelowa 7-13 lat"
+						),
+						elem!"h3"(
+							"Czas trwania lekcji 60 minut"
+						),
+						elem!"p"(
+							"Cele zajęć",
+							elem!"ol"(
+								elem!"li"(
+									"Sprawna komunikacja dwustronna w języku angielskim"
+								),
+								elem!"li"(
+									"Umiejętność prowadzenia luźnej konwersacji"
+								),
+								elem!"li"(
+									"Rozwój kreatywnego myślenia i umiejętności planowania"
+								),
+							)
+						),
+					),
+				),
+				elem!"div"(
+					attr("class") = ["offer", "offer-right"],
+					attr("id") = "homeStacjonarne",
+					elem!"img"(
+						attr("src") = "/static/img/blank.png",
+						attr("alt") = "blank"
+					),
+					elem!"div"(
+						attr("class") = "offer-text",
+						elem!"h2"(
+							"Zajęcia stacjonarne"
+						),
+						elem!"h3"(
+							"Grupa docelowa 7-13 lat"
+						),
+						elem!"h3"(
+							"Czas trwania lekcji 60 minut"
+						),
+						elem!"p"(
+							"Cele zajęć",
+							elem!"ol"(
+								elem!"li"(
+									"Sprawna komunikacja dwustronna w języku angielskim"
+								),
+								elem!"li"(
+									"Umiejętność prowadzenia luźnej konwersacji"
+								),
+								elem!"li"(
+									"Rozwój kreatywnego myślenia i umiejętności planowania"
+								),
+							)
+						),
+					),
+				),
+			),
+			
+			
+			elem!"div"(
+				attr("class") = ["container-text"],
+				elem!"h1"(
+					attr("class") = "boldH1",
+					"Language Laboratories ® Kadra"
+				),
+				elem!"h3"(
+					attr("class") = "padding",
+					" współpracujemy od lat z doświadczonymi ekspertami"
+				)
+				
+			),
+
+			
+			elem!"div"(
+				attr("class") = "card-container",
+				cardDividerDOC,
+				kadraCard("NADZÓR MERYTORYCZNY","static/ppl/agataHof.webp", elem!"span"(
+					makeBold("dr Agata Hofman"),
+					"- twórca programu nauczania i dyrektor w Przedszkolu Gedania 1922 oraz placówce edukacyjnej creoGedania. 
+					Właścicel Language Laboratories, jednej z najstarszych szkół językowych w Polsce, 
+					która wprowadza innowacyjne programy nauczania języków obcych z wykorzystaniem ICT od 1968 roku. 
+					Jest również autorem 2 książek oraz ponad 40 publikacji na temat nauczania języków obcych. 
+					W 2009 roku zainicjowała ona projekt Polska Akademia Dzieci. "
+				)),
+				cardDividerDOC,
+				kadraCard("LEKTOR, SPECJALISTA","static/ppl/jacJed.webp", elem!"span"(
+					makeBold("mgr Jacek Jędrzejczak "),
+					"lektor Language Laboratories", makeBold("od 28 lat")," 
+					ma ogromne doświadczenie w pracy z osobami dorosłymi i środowiskami biznesowymi. 
+					Autorskie programy, język biznesu i płynna komunikacja 
+					to jedne z wielu cech charakterystycznych zajęć prowadzonych przez tego lektora 
+					z tak bogatym doświadczeniem w indywidualnym nauczaniu języka angielskiego. "
+				)),
+				cardDividerDOC,
+			),
+			elem!"div"(
+				attr("class") = "card-container",
+				cardDividerDOC,
+				kadraCard("LEKTOR, SPECJALISTA","static/ppl/jacJed.webp", elem!"span"(
+					makeBold("mgr Jacek Jędrzejczak "),
+					"lektor Language Laboratories", makeBold("od 28 lat")," 
+					ma ogromne doświadczenie w pracy z osobami dorosłymi i środowiskami biznesowymi. 
+					Autorskie programy, język biznesu i płynna komunikacja 
+					to jedne z wielu cech charakterystycznych zajęć prowadzonych przez tego lektora 
+					z tak bogatym doświadczeniem w indywidualnym nauczaniu języka angielskiego. "
+				)),
+				cardDividerDOC,
+			),
 			elem!"div"(
 				attr("class") = ["blueDiv", "whiteText",],
 			
@@ -204,56 +379,18 @@ immutable webHome = text(
 			),
 
 			elem!"div"(
-			
+				attr("class") = "footer",
 				elem!"div"(
-					attr("class") = ["container-text"],
-					elem!"h1"(
-						attr("class") = "boldH1",
-						"Language Laboratories ® Kadra"
-					),
-					elem!"h3"(
-						attr("class") = "padding",
-						" współpracujemy od lat z doświadczonymi ekspertami"
-					)
-					
+					attr("class") = "footer-c",
+				),
+				elem!"div"(
+					attr("class") = "footer-c",
+				),
+				elem!"div"(
+					attr("class") = "footer-c",
 				),
 			),
-			
-			elem!"div"(
-				attr("class") = "card-container",
-				cardDividerDOC,
-				kadraCard("NADZÓR MERYTORYCZNY","static/ppl/agataHof.webp", elem!"span"(
-					makeBold("dr Agata Hofman"),
-					"- twórca programu nauczania i dyrektor w Przedszkolu Gedania 1922 oraz placówce edukacyjnej creoGedania. 
-					Właścicel Language Laboratories, jednej z najstarszych szkół językowych w Polsce, 
-					która wprowadza innowacyjne programy nauczania języków obcych z wykorzystaniem ICT od 1968 roku. 
-					Jest również autorem 2 książek oraz ponad 40 publikacji na temat nauczania języków obcych. 
-					W 2009 roku zainicjowała ona projekt Polska Akademia Dzieci. "
-				)),
-				cardDividerDOC,
-				kadraCard("LEKTOR, SPECJALISTA","static/ppl/jacJed.webp", elem!"span"(
-					makeBold("mgr Jacek Jędrzejczak "),
-					"lektor Language Laboratories", makeBold("od 28 lat")," 
-					ma ogromne doświadczenie w pracy z osobami dorosłymi i środowiskami biznesowymi. 
-					Autorskie programy, język biznesu i płynna komunikacja 
-					to jedne z wielu cech charakterystycznych zajęć prowadzonych przez tego lektora 
-					z tak bogatym doświadczeniem w indywidualnym nauczaniu języka angielskiego. "
-				)),
-				cardDividerDOC,
-			),
-			elem!"div"(
-				attr("class") = "card-container",
-				cardDividerDOC,
-				kadraCard("LEKTOR, SPECJALISTA","static/ppl/jacJed.webp", elem!"span"(
-					makeBold("mgr Jacek Jędrzejczak "),
-					"lektor Language Laboratories", makeBold("od 28 lat")," 
-					ma ogromne doświadczenie w pracy z osobami dorosłymi i środowiskami biznesowymi. 
-					Autorskie programy, język biznesu i płynna komunikacja 
-					to jedne z wielu cech charakterystycznych zajęć prowadzonych przez tego lektora 
-					z tak bogatym doświadczeniem w indywidualnym nauczaniu języka angielskiego. "
-				)),
-				cardDividerDOC,
-			),
+
         ),
     ),
 );
@@ -351,7 +488,7 @@ immutable minecraftDOC = elem!"div"(
 		"Czas trwania lekcji 60 minut"
 	),
 	elem!"p"(
-		"Opłaty",
+		"Prowadzący",
 		elem!"ol"(
 			elem!"li"(
 				elem!"a"(
