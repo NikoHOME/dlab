@@ -1,12 +1,35 @@
 .footer{
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: flex;
     background-color: rgb(25, 25, 112);
+    color: white;
     margin-top: 200px;
+    justify-content: center;
+    padding-top: 50px;
+    background-image: radial-gradient(at 50% 100%, rgb(41, 45, 97) 30%, rgb(23, 25, 80) 80%);
 }
 
 .footer-c{
-    width: 30%;
-    height: 400px;
+    width: 25%;
+    height: 300px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .footer-c {
+        width: 27%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-c {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .footer-c {
+        width: 33%;
+    }
 }

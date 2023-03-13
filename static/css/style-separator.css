@@ -1,0 +1,54 @@
+
+.home-banner{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.home-anchor1, .home-anchor2, .home-anchor3{
+    position: absolute;
+    width: 30%;
+    height: 600px;
+    display: block;
+}
+
+.home-anchor1{
+    left: 5%;
+}
+
+.home-anchor2{
+    
+}
+
+.home-anchor3{
+    right: 5%;
+}
+
+
+
+.home-column1, .home-column2, .home-column3 {
+    width: 30%;
+    height: 100%;
+    border: 3px solid;
+    transition: 0.15s;
+}
+
+.home-column1 img, .home-column2 img, .home-column3 img{
+    object-fit: cover;
+    height: 600px;
+    width: 100%;
+}
+
+.home-anchor2:hover + .home-column2 {
+    width: 100%;
+}
+
+.home-anchor2:hover + .home-column1 {
+    visibility: collapse;
+}
+
+.home-anchor2:hover + .home-column3 {
+    visibility: collapse;
+}

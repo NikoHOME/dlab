@@ -5,11 +5,18 @@
     width: 100%;
 }
 
-
-.offer img {
-    height: 100%;
+.offer-img {
     width: 60%;
+    height: 600px;
+}
+
+
+.offer-img img {
     object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .offer-text{
@@ -17,12 +24,13 @@
 }
 
 .offer-right .offer-text{
-    padding-left: 50px;
+    padding-left: 5%;
     float: left;
 }
 
-.offer-right img{
+.offer-right .offer-img {
     float: right ;
+    mask-image: radial-gradient(circle at 100%, rgb(0, 0, 0, 1), rgb(0, 0, 0, 1),rgb(0, 0, 0, 0));
 }
 
 .offer-left .offer-text{
@@ -30,8 +38,9 @@
     float: right;
 }
 
-.offer-left img{
+.offer-left .offer-img {
     float: left ;
+    mask-image: radial-gradient(circle at 0%, rgb(0, 0, 0, 1), rgb(0, 0, 0, 1),rgb(0, 0, 0, 0));
 }
 .offer-h1 {
     text-align: center;

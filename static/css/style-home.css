@@ -29,7 +29,7 @@
 
 
 .blueDiv {
-    background-color: rgb(25, 25, 112);
+    background-color: rgb(25, 25, 90);
 }
 
 .whiteText {
@@ -78,6 +78,19 @@
     margin-right: auto;
     display: flex;
     align-items: center;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+
+.svg-icon {
+    height: 50px;
+    width: 50px;
+    fill :white;
 }
 
 @media only screen and (max-width: 1140px) {
