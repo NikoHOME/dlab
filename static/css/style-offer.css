@@ -1,13 +1,12 @@
 .offer {
-    height: 600px;
+    height: 700px;
     margin-top: 200px;
     margin-bottom: 200px;
     width: 100%;
 }
 
 .offer-img {
-    width: 60%;
-    height: 600px;
+    height: 700px;
 }
 
 
@@ -20,31 +19,42 @@
 }
 
 .offer-text{
-    width: 30%;
+ /*   width: 30%; */
+    box-sizing: border-box;  
+    padding-left: 25px;
 }
 
-.offer-right .offer-text{
-    padding-left: 5%;
-    float: left;
+.even-column img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: 3px solid;
+}
+
+.offer-right .offer-text{/*
+    margin-left: 5%;*/
 }
 
 .offer-right .offer-img {
-    float: right ;
     mask-image: radial-gradient(circle at 100%, rgb(0, 0, 0, 1), rgb(0, 0, 0, 1),rgb(0, 0, 0, 0));
 }
 
-.offer-left .offer-text{
-    padding-right: 50px;
-    float: right;
+.offer-left .offer-text{/*
+    margin-right: 50px;*/
 }
 
 .offer-left .offer-img {
-    float: left ;
     mask-image: radial-gradient(circle at 0%, rgb(0, 0, 0, 1), rgb(0, 0, 0, 1),rgb(0, 0, 0, 0));
 }
 .offer-h1 {
     text-align: center;
     font-size: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .offer-img {
+        mask-image: none !important;
+    }
 }
 
 

@@ -9,8 +9,9 @@
 
 .home-anchor1, .home-anchor2, .home-anchor3{
     position: absolute;
-    width: 30%;
-    height: 600px;
+    width: 40px;
+    margin-top: 200px;
+    height: 40px;
     display: block;
 }
 
@@ -19,7 +20,9 @@
 }
 
 .home-anchor2{
-    
+    left: 35%;
+    z-index: 1000;
+
 }
 
 .home-anchor3{
@@ -41,14 +44,12 @@
     width: 100%;
 }
 
-.home-anchor2:hover + .home-column2 {
-    width: 100%;
+.home-anchor2:hover ~ .even-column-middle {
+    scale: 1.2;
 }
 
-.home-anchor2:hover + .home-column1 {
-    visibility: collapse;
-}
-
-.home-anchor2:hover + .home-column3 {
+.home-anchor2:hover ~ .even-column-left, .home-anchor2:hover ~ .even-column-right,
+.home-anchor1:hover ~ .even-column-middle, .home-anchor1:hover ~ .even-column-right,
+.home-anchor3:hover ~ .even-column-left, .home-anchor3:hover ~ .even-column-middle {
     visibility: collapse;
 }

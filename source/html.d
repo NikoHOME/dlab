@@ -172,7 +172,7 @@ immutable webHome = text(
             attr("class") = ["body ", "body-theme"],
             navbarDOC,
             header("Lanlab"),
-
+/*
 			elem!"div"(
 				attr("class") = "home-banner",
 				elem!"div"(attr("class") = "home-anchor1"),
@@ -200,6 +200,36 @@ immutable webHome = text(
                 	),				
 				),
 			),
+			*/
+			elem!"div"(
+				attr("class") = "wrap-even",
+				
+				elem!"div"(attr("class") = "home-anchor1"),
+				elem!"div"(attr("class") = "home-anchor2"),
+				elem!"div"(attr("class") = "home-anchor3"),
+
+				elem!"div"(
+					attr("class") = ["even-column","even-column-left"],
+					elem!"img"(
+						attr("src") = "static/img/logo.png",
+						attr("alt") = "logo"
+                	),
+				),
+				elem!"div"(
+					attr("class") = ["even-column","even-column-middle"],
+					elem!"img"(
+						attr("src") = "static/img/screenshot.png",
+						attr("alt") = "logo"
+                	),				
+				),
+				elem!"div"(
+					attr("class") = ["even-column","even-column-right"],
+					elem!"img"(
+						attr("src") = "static/img/favicon.png",
+						attr("alt") = "logo"
+                	),				
+				),
+			),
 			elem!"div"(
 				elem!"a"(
 					attr("class") = "anchor",
@@ -210,20 +240,20 @@ immutable webHome = text(
 					"Oferty"
 				),	
 				elem!"div"(
-					attr("class") = ["offer", "offer-right"],
+					attr("class") = ["wrap35","wrap-left","offer", "offer-right"],
 					elem!"a"(
 						attr("class") = "anchor",
 						attr("id") = "homeMinecraft",
 					),
 					elem!"div"(
-						attr("class") = "offer-img",
+						attr("class") = ["main-content","offer-img"],
 						elem!"img"(
 							attr("src") = "/static/img/screenshot.png",
 							attr("alt") = "blank"
 						),
 					),
 					elem!"div"(
-						attr("class") = "offer-text",
+						attr("class") = ["sidebar","offer-text"],
 						elem!"h2"(
 							"Minecraft Angielski"
 						),
@@ -250,20 +280,20 @@ immutable webHome = text(
 					),
 				),
 				elem!"div"(
-					attr("class") = ["offer", "offer-left"],
+					attr("class") = ["wrap35","wrap-right","offer", "offer-left"],
 					elem!"a"(
 						attr("class") = "anchor",
-						attr("id") = "homeKolonie",
+						attr("id") = "homeMinecraft",
 					),
 					elem!"div"(
-						attr("class") = "offer-img",
+						attr("class") = ["main-content","offer-img"],
 						elem!"img"(
 							attr("src") = "/static/img/screenshot.png",
 							attr("alt") = "blank"
 						),
 					),
 					elem!"div"(
-						attr("class") = "offer-text",
+						attr("class") = ["sidebar","offer-text"],
 						elem!"h2"(
 							"Pół kolonie"
 						),
@@ -290,20 +320,20 @@ immutable webHome = text(
 					),
 				),
 				elem!"div"(
-					attr("class") = ["offer", "offer-right"],
+					attr("class") = ["wrap35","wrap-left","offer", "offer-right"],
 					elem!"a"(
 						attr("class") = "anchor",
-						attr("id") = "homeStacjonarne",
+						attr("id") = "homeMinecraft",
 					),
 					elem!"div"(
-						attr("class") = "offer-img",
+						attr("class") = ["main-content","offer-img"],
 						elem!"img"(
 							attr("src") = "/static/img/screenshot.png",
 							attr("alt") = "blank"
 						),
 					),
 					elem!"div"(
-						attr("class") = "offer-text",
+						attr("class") = ["sidebar","offer-text"],
 						elem!"h2"(
 							"Zajęcia stacjonarne"
 						),

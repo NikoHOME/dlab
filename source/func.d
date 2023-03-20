@@ -47,7 +47,7 @@ Element elemList(const string[2][] input...)
 Element sideBar(string title, const string[2][] listInput...)
 {
     return elem!"div"(
-		attr("class") = "sidebar-left",
+		attr("class") = "sidebar",
         elem!"h2"(attr("class") = "side-title", title),
         elemList(listInput),
     );
@@ -75,7 +75,7 @@ string page(Element inputDocument, string pageTitle, const string[2][] listInput
                 navbarDOC,
                 header(pageTitle),
                 elem!"div"(
-                    attr("class") = "wrap",
+                    attr("class") = "wrap-left",
 
                     elem!"div"(
                         attr("class") = "main-content",
