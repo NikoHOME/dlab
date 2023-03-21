@@ -15,6 +15,7 @@ void handle(Cgi cgi)
 		"/static/css/".serveStaticFileDirectory,
 		"/static/img/".serveStaticFileDirectory,
 		"/static/ppl/".serveStaticFileDirectory,
+		"/static/sesja/".serveStaticFileDirectory,
 		"/static/js/".serveStaticFileDirectory
 	)) return;
 	if(defaultHandler(cgi)) return;

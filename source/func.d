@@ -2,6 +2,7 @@ module dlab.func;
 
 import elemi;
 import std.conv;
+import std.stdio;
 import dlab.html;
 
 Element makeBold(string text)
@@ -44,13 +45,19 @@ Element elemList(const string[2][] input...)
     return output;
 }
 
-Element sideBar(string title, const string[2][] listInput...)
+Element sideBar(string[] titles, const string[2][][] listInput...)
 {
-    return elem!"div"(
+    Element output = elem!"div"(
 		attr("class") = "sidebar",
-        elem!"h2"(attr("class") = "side-title", title),
-        elemList(listInput),
     );
+
+    for(int index = 0; index < titles.length; ++index)
+    {
+        output ~= elem!"h2"(attr("class") = "side-title", titles[index]);
+        output ~= elemList(listInput[0]);
+    }
+
+    return output;
 }
 
 Element header(string title)
@@ -64,7 +71,7 @@ Element header(string title)
     );
 }
 
-string page(Element inputDocument, string pageTitle, const string[2][] listInput...)
+string page(Element inputDocument, string pageTitle, const string[2][][] listInput...)
 {
     return text(
         Element.HTMLDoctype,
@@ -81,7 +88,7 @@ string page(Element inputDocument, string pageTitle, const string[2][] listInput
                         attr("class") = "main-content",
                         inputDocument,
                     ),
-                    sideBar("Zajęcia", listInput),
+                    sideBar(["Zajęcia", "Kontakt"], listInput),
                 ),
             ),
         ),
@@ -109,4 +116,33 @@ Element kadraCard(string title, string src, Element textElement)
             ),
         )
     );
+}
+
+Element offerSection(string anchor, string image, bool isLeft, const Element[] content)
+{
+    Element output =  elem!"div"();
+    
+    if(isLeft)
+        output ~= attr("class") = ["wrap35","wrap-right","offer", "offer-left"];
+    else
+        output ~= attr("class") = ["wrap35","wrap-left","offer", "offer-right"];
+
+    output ~= elem!"a"(
+        attr("class") = "anchor",
+        attr("id") = anchor,
+    ),
+
+    output ~= elem!"div"(
+        attr("class") = ["main-content","offer-img"],
+        elem!"img"(
+            attr("src") = image,
+            attr("alt") = "blank"
+        ),
+    );
+    output ~= elem!"div"(
+        attr("class") = ["sidebar","offer-text"],
+        content
+    );
+
+    return output;
 }

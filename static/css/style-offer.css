@@ -6,7 +6,7 @@
 }
 
 .offer-img {
-    height: 700px;
+
 }
 
 
@@ -24,12 +24,6 @@
     padding-left: 25px;
 }
 
-.even-column img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border: 3px solid;
-}
 
 .offer-right .offer-text{/*
     margin-left: 5%;*/
