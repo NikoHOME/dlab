@@ -47,14 +47,14 @@ Element elemList(const string[2][] input...)
 
 Element sideBar(string[] titles, const string[2][][] listInput...)
 {
+    import std.range;
     Element output = elem!"div"(
 		attr("class") = "sidebar",
     );
 
-    for(int index = 0; index < titles.length; ++index)
-    {
-        output ~= elem!"h2"(attr("class") = "side-title", titles[index]);
-        output ~= elemList(listInput[0]);
+    foreach (title, input; zip(titles, listInput)) {
+        output ~= elem!"h2"(attr("class") = "side-title", title);
+        output ~= elemList(input);
     }
 
     return output;

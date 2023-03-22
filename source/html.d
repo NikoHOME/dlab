@@ -200,7 +200,7 @@ immutable webHome = text(
 			*/
 			elem!"div"(
 				attr("class") = "wrap-even",
-				
+				attr("id") = "Home",
 				elem!"div"(
 					attr("class") = "home-anchor1",
 					elem!"a"(
@@ -332,7 +332,6 @@ const string [2][] mainList =
 const string [2][] kontaktList = 
 [
     ["/kontakt", "Kontakt"],
-	["/kontakt", "Kontakt"],
 ];
 
 
