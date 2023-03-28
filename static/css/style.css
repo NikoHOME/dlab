@@ -301,18 +301,28 @@ Optional 2 Column Layout
     height: 540px !important;
   }
   
-}
+  .home-anchor1 , .home-anchor2, .home-anchor3{
+    margin-top: 300px !important;
+  }
 
-.test {
-  width: 100% !important;
-  object-fit: cover !important;
-  max-height: 100% !important;
-  max-width: none !important;
-}
+  .home-anchor2 {
+    top: 400px !important;
+  }
+  .home-anchor3 {
+    top: 800px !important;
+  }
 
-.banner-test {
-  height: 700px !important;
-  max-height: 700px !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  .even-column img {
+    height: 400px !important;
+  }
+
+  .offer {
+    height: 600px !important;
+  }
+
+  .footer-c h1 {
+      font-size: large !important;
+  }
+
+
 }
