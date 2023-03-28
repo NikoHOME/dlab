@@ -19,3 +19,9 @@
     color:darkslateblue;
     text-decoration: underline;
 }
+
+.list-elem a:visited, .list-elem a {
+    color: rgb(50,50,50);
+    text-decoration: none;
+    outline: none;
+}
