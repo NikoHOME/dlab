@@ -70,6 +70,10 @@
     margin-right: 30px;
     font-size: 14px;
 }
+.cards-container {
+    display: flex;
+    flex-direction: column;
+}
 
 .card-container {
     padding-right: 15px;

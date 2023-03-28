@@ -5,6 +5,7 @@ import dlab.func;
 import dlab.card;
 import dlab.footer;
 import dlab.offer;
+import dlab.slide;
 
 import std.conv;
 
@@ -198,6 +199,7 @@ immutable webHome = text(
 				),
 			),
 			*/
+			
 			elem!"div"(
 				attr("class") = "wrap-even",
 				attr("id") = "Home",
@@ -272,6 +274,9 @@ immutable webHome = text(
                 	),				
 				),
 			),
+
+			slideDOC,
+
 			elem!"div"(
 				elem!"a"(
 					attr("class") = "anchor",

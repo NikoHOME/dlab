@@ -1,7 +1,5 @@
 
 html, body {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   height: 100%;
   margin: 0px;
@@ -96,8 +94,9 @@ input:checked + .slider:before {
 .container-text {
   width: 1140px;
   max-width: 100%;
-  margin-left: auto;
+  margin-left:  auto;
   margin-right: auto;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -126,9 +125,8 @@ input:checked + .slider:before {
   margin: 8px 0;
 }
 
-a, a:visited {
+a:visited {
   text-decoration: none;
-  color: rgb(80, 80, 80);
   outline: none;
 }
 
@@ -219,16 +217,16 @@ a, a:visited {
   .main-content, .sidebar, .even-column {
     top: 0;
   }
-
+/*
   .even-column-left {
-    left: -66%;
+   // left: -66%;
   }
   .even-column-middle {
     left: 33%;
   }
   .even-column-right {
     right:  -66%;
-  }
+  }*/
   
   .wrap-left .sidebar {
     left: -75% ; /*Width of #main-content*/

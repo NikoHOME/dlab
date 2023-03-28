@@ -13,7 +13,6 @@
     width: 5%;
     margin-top: 650px;
     height: 100px;
-    display: block;
     z-index: 1;
     align-items: center;
     display: flex;
@@ -68,36 +67,21 @@
 */
 .even-column {
     transition-duration: 0.5s;
-    transition-timing-function: ease-in;
+    transition-timing-function: out;
 }
+
+
+.wrap-even {
+    display: block;
+    position: relative;
+}
+
 
 @media only screen and (min-width: 1024px) {
-
-    .home-anchor2:hover ~ .even-column-middle {
-        width: 100%;
+    .wrap-even {
+        display: none;
     }
-    .home-anchor2:hover ~ .even-column-middle img,
-    .home-anchor1:hover ~ .even-column-left img,
-    .home-anchor3:hover ~ .even-column-right img {
-        object-fit: cover;
-    }
-
-    .home-anchor1:hover ~ .even-column-left {
-        width: 100%;
-    }
-
-    .home-anchor3:hover ~ .even-column-right {
-        width: 100%;
-    }
-
-    .home-anchor2:hover ~ .even-column-left, .home-anchor2:hover ~ .even-column-right,
-    .home-anchor1:hover ~ .even-column-middle, .home-anchor1:hover ~ .even-column-right,
-    .home-anchor3:hover ~ .even-column-left, .home-anchor3:hover ~ .even-column-middle {
-        width: 0%;
-    }
-
 }
-
 
 
 @media only screen and (max-width: 1024px) {
@@ -106,13 +90,13 @@
         right: 47.5%;
     }
     .home-anchor2{
-        top: 33%;
+        top: 800px;
     }
     .home-anchor3{
-        top: 66%;
+        top: 1600px;
     }
     .even-column {
         transition-duration: 0.1s;
-        transition-timing-function: ease-out;
+        transition-timing-function: ease-in;
     }
 }

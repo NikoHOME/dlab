@@ -1,12 +1,15 @@
 .offer {
-    height: 700px;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    height: 800px;
+    margin-top: auto;
+    padding-top: 100px;
+    margin-bottom: auto;
     width: 100%;
 }
 
-.offer-img {
-
+.offer-divider {
+    margin: 0;
+    height: 50px;
+    border-top: 1px solid black;
 }
 
 
@@ -30,7 +33,7 @@
 }
 
 .offer-right .offer-img {
-    mask-image: radial-gradient(circle at 100%, rgb(0, 0, 0, 1), rgb(0, 0, 0, 1),rgb(0, 0, 0, 0));
+    mask-image: radial-gradient(circle at 100%, rgb(0, 0, 0, 1), rgb(0, 0, 0, 1),rgb(0, 0, 0, 1),rgb(0, 0, 0, 0));
 }
 
 .offer-left .offer-text{/*
@@ -38,7 +41,7 @@
 }
 
 .offer-left .offer-img {
-    mask-image: radial-gradient(circle at 0%, rgb(0, 0, 0, 1), rgb(0, 0, 0, 1),rgb(0, 0, 0, 0));
+    mask-image: radial-gradient(circle at 0%, rgb(0, 0, 0, 1), rgb(0, 0, 0, 1),rgb(0, 0, 0, 1),rgb(0, 0, 0, 0));
 }
 .offer-h1 {
     text-align: center;

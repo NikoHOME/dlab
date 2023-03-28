@@ -1,8 +1,12 @@
 
-
-
-.body-theme {
-  background-color: #171941;
+body {
+  scrollbar-color: rgb(69, 74, 77) rgb(32, 35, 36);
+  background-color: rgb(24, 26, 27);
+  border-bottom-color: rgb(115, 107, 94);
+  border-left-color: rgb(115, 107, 94);
+  border-right-color: rgb(115, 107, 94);
+  border-top-color: rgb(115, 107, 94);
+  color: rgb(232, 230, 227)
 }
 
 hr.solid-theme {
@@ -11,11 +15,20 @@ hr.solid-theme {
 
 
 .topnav-theme {
-  background-color: black;
+  background-color: rgb(24, 26, 27);
+  color: rgb(232, 230, 227)
 }
 
 .a-nav {
-  color: rgb(150, 190, 210);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(190, 184, 176);
+  border-left-color: rgb(190, 184, 176);
+  border-right-color: rgb(190, 184, 176);
+  border-top-color: rgb(190, 184, 176);
+  color: rgb(190, 184, 176);
+  outline-color: rgb(190, 184, 176);
+  scrollbar-color: rgb(69, 74, 77) rgb(32, 35, 36);
+  text-decoration-color: rgb(190, 184, 176)
 }
 
 .topnav-theme span {
@@ -59,9 +72,6 @@ hr.solid-theme {
   background-color: black;
 }
 
-.a-nav-theme {
-  color:  rgb(150, 190, 210);
-}
 
 .span-nav-theme {
   color: rgb(140, 182, 204);
@@ -71,8 +81,8 @@ hr.solid-theme {
 }
 
 .a-nav-theme:hover {
-  background-color: rgb(100, 154, 154);
-  color: rgb(0, 0, 0);
+  background-color: rgb(42, 45, 47);
+  color: rgb(232, 230, 227);
 }
 
 .a-nav-theme.active {
@@ -82,3 +92,38 @@ hr.solid-theme {
 
 
 
+.page-header {
+  background-color: rgb(5, 78, 148) !important;
+  color: rgb(232, 230, 227) !important;
+}
+
+.offer h2 {
+  color: rgb(95, 181, 250)
+}
+.offer p {
+  color: rgb(107, 255, 255)
+}
+
+.container {
+  color: rgb(232, 230, 227);
+  scrollbar-color: rgb(69, 74, 77) rgb(32, 35, 36)
+}
+
+.card-theme {
+  background: rgb(43, 51, 62);
+  background-color: rgb(43, 51, 62);
+  background-image: radial-gradient(at 50% 100%, rgb(41, 45, 97) 30%, rgb(24, 26, 51) 80%) !important;
+  color: white;
+}
+
+.footer {
+  background-image: radial-gradient(at 50% 100%, rgb(41, 45, 97) 30%, rgb(24, 26, 51) 80%) !important;
+}
+
+.blueDiv {
+  background-image: radial-gradient(at 50% 100%, rgb(41, 45, 97) 30%, rgb(24, 26, 51) 80%) !important;
+}
+
+.offer-divider {
+  border-color: white !important;
+}

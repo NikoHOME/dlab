@@ -121,7 +121,9 @@ Element kadraCard(string title, string src, Element textElement)
 Element offerSection(string anchor, string image, bool isLeft, const Element[] content)
 {
     Element output =  elem!"div"();
-    
+    output ~= elem!"div"(
+        attr("class") = "offer-divider"
+    );
     if(isLeft)
         output ~= attr("class") = ["wrap35","wrap-right","offer", "offer-left"];
     else
@@ -143,6 +145,7 @@ Element offerSection(string anchor, string image, bool isLeft, const Element[] c
         attr("class") = ["sidebar","offer-text"],
         content
     );
+
 
     return output;
 }

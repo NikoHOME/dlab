@@ -84,37 +84,39 @@ immutable cardDividerDOC = elem!"div"(
 );
 
 immutable auto cardSectionDOC = 
-[		
     elem!"div"(
-        attr("class") = "card-container",
-        cardDividerDOC,
-        agataHofCARD,
-        cardDividerDOC,
-        jacJedCARD,
-        cardDividerDOC,
-    ),
-    elem!"div"(
-        attr("class") = "card-container",
-        cardDividerDOC,
-        ewaSzumiCARD,
-        cardDividerDOC,
-        pawHostCARD,
-        cardDividerDOC,
-    ),
-    elem!"div"(
-        attr("class") = "card-container",
-        cardDividerDOC,
-        aniaBroszCARD,
-        cardDividerDOC,
-        michCzepCARD,
-        cardDividerDOC,
-    ),
-    elem!"div"(
-        attr("class") = "card-container",
-        cardDividerDOC,
-        agneSwaCARD,
-        cardDividerDOC,
-        olgaSukheCARD,
-        cardDividerDOC,
-    ),
-];
+        attr("class") = "cards-container",
+
+        elem!"div"(
+            attr("class") = "card-container",
+            cardDividerDOC,
+            agataHofCARD,
+            cardDividerDOC,
+            jacJedCARD,
+            cardDividerDOC,
+        ),
+        elem!"div"(
+            attr("class") = "card-container",
+            cardDividerDOC,
+            ewaSzumiCARD,
+            cardDividerDOC,
+            pawHostCARD,
+            cardDividerDOC,
+        ),
+        elem!"div"(
+            attr("class") = "card-container",
+            cardDividerDOC,
+            aniaBroszCARD,
+            cardDividerDOC,
+            michCzepCARD,
+            cardDividerDOC,
+        ),
+        elem!"div"(
+            attr("class") = "card-container",
+            cardDividerDOC,
+            agneSwaCARD,
+            cardDividerDOC,
+            olgaSukheCARD,
+            cardDividerDOC,
+        ),
+    );
