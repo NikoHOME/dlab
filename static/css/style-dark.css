@@ -180,3 +180,12 @@ input:checked + .slider {
   text-decoration: none;
   outline: none;
 }
+
+.dropdown-content a {
+  background-color: #c4c3c3 !important;
+  
+}
+
+.dropdown-content2 a:hover {
+  background-color: #9d9d9d;
+}
