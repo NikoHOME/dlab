@@ -64,7 +64,7 @@ immutable navbarDOC = elem!"nav"(
 						),
 					),
 					elem!"a"(
-						attr("href") = "/#homeKolonie",
+						attr("href") = "/#homeWarsztaty",
 						elem!"li"(
 							"Kolonie"
 						),
@@ -130,7 +130,7 @@ immutable navbarDOC = elem!"nav"(
 				),
 				elem!"a"(
 					attr("class") = "anim2",
-					attr("href") = "/#homeKolonie",
+					attr("href") = "/#homeWarsztaty",
 					"Kolonie",
 				),
 				elem!"a"(
@@ -202,7 +202,6 @@ immutable webHome = text(
 			
 			elem!"div"(
 				attr("class") = "wrap-even",
-				attr("id") = "Home",
 				elem!"div"(
 					attr("class") = "home-anchor1",
 					elem!"a"(
@@ -216,7 +215,7 @@ immutable webHome = text(
 								attr("d") = "M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0",
 							),
 						),
-						attr("href") = "/#homeKolonie",
+						attr("href") = "/#homeWarsztaty",
 					),
 				),
 				elem!"div"(
@@ -255,7 +254,7 @@ immutable webHome = text(
 				elem!"div"(
 					attr("class") = ["even-column","even-column-left"],
 					elem!"img"(
-						attr("src") = "static/sesja/homeKolonie.JPG",
+						attr("src") = "static/sesja/homeWarsztaty.JPG",
 						attr("alt") = "logo"
                 	),
 				),
@@ -269,7 +268,7 @@ immutable webHome = text(
 				elem!"div"(
 					attr("class") = ["even-column","even-column-right"],
 					elem!"img"(
-						attr("src") = "static/img/favicon.png",
+						attr("src") = "static/sesja/homeStacjonarne.JPG",
 						attr("alt") = "logo"
                 	),				
 				),
@@ -319,8 +318,8 @@ immutable webHome = text(
 
 
 immutable webMinecraft = page(minecraftDOC, "Minecraft nauka angielskiego",   inputList);
-immutable webKolonie = page(testDOC, "Półkolonie Mind-Craft",  inputList);
-immutable webKontakt = page(testDOC, "Kontakt",  inputList);
+immutable webWarsztaty = page(testDOC, "Warsztaty Mind-Craft",  inputList);
+immutable webKontakt = page(kontaktDOC, "Kontakt",  inputList);
 immutable webWymagania = page(specDOC, "Wymagania sprzętowe", inputList);
 
 const string[2][][] inputList =
@@ -331,7 +330,7 @@ const string[2][][] inputList =
 const string [2][] mainList = 
 [
     ["/minecraft", "Minecraft"],
-    ["/kolonie", "Kolonie"],
+    //["/warsztaty", "Warsztaty"], //TODO
 ];
 
 const string [2][] kontaktList = 
@@ -341,6 +340,29 @@ const string [2][] kontaktList =
 
 
 
+
+immutable kontaktDOC = elem!"div"(
+	attr("class") = "mainPageDiv",
+    elem!"h3"(
+		"Telefon"
+	),
+	elem!"h4"(
+		"533 011 544"
+	),
+	elem!"h3"(
+		"E-mail"
+	),
+	elem!"h4"(
+		"agata.hofman@lanlab.pl"
+	),
+	elem!"h3"(
+		"Adres"
+	),
+	elem!"h4"(
+		"Hallera 201, Gdańsk"
+	)
+
+);
 
 immutable testDOC = elem!"div"(
 	attr("class") = "mainPageDiv",
@@ -413,13 +435,15 @@ immutable minecraftDOC = elem!"div"(
 		elem!"ol"(
 			elem!"li"(
 				elem!"a"(
-					attr("href") = "/kadra/szyhof",
+					//attr("href") = "/kadra/szyhof",
+					//TODO
 					"Szymon Hoffman "
 				),
 			),
 			elem!"li"(
 				elem!"a"( 
-					attr("href") = "/kadra/wikgaw",
+					//attr("href") = "/kadra/wikgaw",
+					//TODO
 					"Wiktor Gawroński "
 				),
 			),

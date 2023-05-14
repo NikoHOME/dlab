@@ -2,6 +2,7 @@
 html, body {
   width: 100%;
   height: 100%;
+  font-size: calc(12px + 0.25vw);
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
@@ -47,7 +48,6 @@ html, body {
   left: -4px;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
   transition: .4s;
   border-radius: 34px;
 }
@@ -64,9 +64,6 @@ html, body {
   border-radius: 50%;
 }
 
-input:checked + .slider {
-  background-color: #476075;
-}
 
 input:checked + .slider:before {
   transform: translateX(26px);
@@ -282,9 +279,6 @@ Optional 2 Column Layout
 
 
 @media only screen and (max-width: 900px) {
-  body {
-    font-size: 80% !important;
-  }
   .boldH1 {
     font-size: 35px !important;
   }
@@ -319,10 +313,5 @@ Optional 2 Column Layout
   .offer {
     height: 600px !important;
   }
-
-  .footer-c h1 {
-      font-size: large !important;
-  }
-
 
 }

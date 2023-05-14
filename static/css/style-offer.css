@@ -1,5 +1,5 @@
 .offer {
-    height: 800px;
+    height: 900px;
     margin-top: auto;
     padding-top: 100px;
     margin-bottom: auto;
@@ -55,6 +55,7 @@
 }
 
 
+
 .offer h2 {
     color: #0661b9;
 }
@@ -70,5 +71,6 @@
 
 .offer a {
     color:darkslateblue;
+    font-weight: bold;
     text-decoration: underline;
 }

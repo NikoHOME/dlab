@@ -64,6 +64,7 @@ Element header(string title)
 {
     return elem!"div"(
         attr("class") = "page-header",
+        attr("id") = "Home",
         elem!"div"(
             attr("class") = "container",
             elem!"h1"(attr("class") = "title", title )

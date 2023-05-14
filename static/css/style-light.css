@@ -57,6 +57,10 @@ hr.solid-theme {
   background-color: aliceblue;
 }
 
+.slider {
+  background-color: #648cbb !important;
+}
+
 .a-nav-theme {
   color:  rgb(55, 71, 79);
 }

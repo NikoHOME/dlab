@@ -6,8 +6,9 @@ import dlab.func;
 import dlab.html;
 
 
-immutable webKadraWikGaw = page(wikGawDOC, "Wiktor Gawroński", mainList);
+immutable webKadraWikGaw = page(wikGawDOC, "Wiktor Gawroński", inputList);
 
+//TODO
 immutable wikGawDOC = elem!"div"(
 	attr("class") = "mainPageDiv",
     elem!"h2"(

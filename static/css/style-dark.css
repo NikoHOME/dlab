@@ -9,6 +9,7 @@ body {
   color: rgb(232, 230, 227)
 }
 
+
 hr.solid-theme {
   border-top: 3px solid rgb(38, 40, 40);
 }
@@ -32,7 +33,7 @@ hr.solid-theme {
 }
 
 .topnav-theme span {
-  color: rgb(140, 182, 204);
+  color: rgb(166, 125, 0);
 }
 
 
@@ -72,9 +73,12 @@ hr.solid-theme {
   background-color: black;
 }
 
+input:checked + .slider {
+  background-color: rgb(166, 125, 0) !important;
+}
 
 .span-nav-theme {
-  color: rgb(140, 182, 204);
+  color: rgb(166, 125, 0);
   background-color: black;
   width: 122px;
   margin: 0;
@@ -93,15 +97,32 @@ hr.solid-theme {
 
 
 .page-header {
-  background-color: rgb(5, 78, 148) !important;
+  background-color: rgb(96, 82, 6) !important;
   color: rgb(232, 230, 227) !important;
 }
 
 .offer h2 {
-  color: rgb(95, 181, 250)
+  color: rgb(202, 179, 75);
 }
 .offer p {
-  color: rgb(107, 255, 255)
+  color: rgb(177, 156, 65);
+}
+.offer h3 {
+  color: rgb(167, 145, 51);
+}
+
+.offer a {
+  color: white;
+}
+
+.offer a:hover {
+
+  color: rgb(108, 204, 236) !important;
+}
+
+
+.offer a:visited {
+  text-decoration: none;
 }
 
 .container {
@@ -110,20 +131,52 @@ hr.solid-theme {
 }
 
 .card-theme {
-  background: rgb(43, 51, 62);
-  background-color: rgb(43, 51, 62);
-  background-image: radial-gradient(at 50% 100%, rgb(41, 45, 97) 30%, rgb(24, 26, 51) 80%) !important;
-  color: white;
+  background: rgb(62, 50, 2);
+  background-color: rgb(62, 50, 2);
+  color: rgb(199, 199, 199);
 }
 
 .footer {
-  background-image: radial-gradient(at 50% 100%, rgb(41, 45, 97) 30%, rgb(24, 26, 51) 80%) !important;
+  background-image: radial-gradient(at 25% 100%, rgb(52, 30, 0) 30%, rgb(72, 50, 2) 80%) !important;
+}
+
+.footer-note {
+  background-image: radial-gradient(at 25% 100%, rgb(52, 30, 0) 30%, rgb(72, 50, 2) 80%) !important;
 }
 
 .blueDiv {
-  background-image: radial-gradient(at 50% 100%, rgb(41, 45, 97) 30%, rgb(24, 26, 51) 80%) !important;
+  background-color: rgb(62, 50, 2) !important;
 }
 
 .offer-divider {
   border-color: white !important;
+}
+
+
+.mainPageDiv {
+  color: rgb(100, 100, 100);
+}
+
+.mainPageDiv h2 {
+  color: rgb(166, 125, 0);
+}
+.mainPageDiv h3 {
+  color: rgb(166, 125, 0);
+}
+.mainPageDiv h4 {
+  color: rgb(216, 215, 194);
+}
+.mainPageDiv p {
+  color: rgb(202, 152, 0);
+}
+
+.mainPageDiv a {
+  color:rgb(175, 175, 159);
+  text-decoration: underline;
+}
+
+.list-elem a:visited, .list-elem a {
+  color: rgb(138, 135, 135);
+  text-decoration: none;
+  outline: none;
 }

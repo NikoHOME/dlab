@@ -15,9 +15,9 @@ http://stackoverflow.com/a/34696029/383904
 	height: 900px; /* Or set a fixed height */
 }
 
-/* SLIDER */
+/* slider-show */
 
-.CSSgal .slider {
+.CSSgal .slider-show {
 	height: 100%;
 	white-space: nowrap;
 	font-size: 0;
@@ -26,7 +26,7 @@ http://stackoverflow.com/a/34696029/383904
 
 /* SLIDES */
 
-.CSSgal .slider > * {
+.CSSgal .slider-show > * {
 	font-size: 1rem;
 	display: inline-block;
 	white-space: normal;
@@ -53,6 +53,7 @@ http://stackoverflow.com/a/34696029/383904
 
 .CSSgal .prevNext a {
 	background: black;
+	border: solid white;
 	position: absolute;
 	width:       60px;
 	height:      60px;
@@ -94,8 +95,8 @@ http://stackoverflow.com/a/34696029/383904
 	-webkit-transition: 0.3s;
 					transition: 0.3s;
 }
-.CSSgal .bullets > a+a {
-	background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+.CSSgal .bullets > a {
+	background: rgba(255, 255, 255, 0.5); /* Dim all */
 }
 .CSSgal .bullets > a:hover {
 	background: rgba(255, 255, 255, 0.7) !important;
@@ -105,28 +106,28 @@ http://stackoverflow.com/a/34696029/383904
 /* ALL: */
 .CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
 /* ACTIVE */
-#s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
-#s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
-#s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
-#s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+#s11:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
+#s22:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+#s33:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+#s44:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
 /* More slides? Add here more rules */
 
 /* PREV/NEXT CONTAINERS VISIBILITY */
 /* ALL: */
 .CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
 /* ACTIVE: */
-#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
-#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
-#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
-#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+#s11:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+#s22:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+#s33:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+#s44:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
 /* More slides? Add here more rules */
 
-/* SLIDER ANIMATION POSITIONS */
+/* slider-show ANIMATION POSITIONS */
 
-#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
-#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
-#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
-#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+#s11:target ~ .slider-show {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s22:target ~ .slider-show {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s33:target ~ .slider-show {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s44:target ~ .slider-show {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
 /* More slides? Add here more rules */
 
 
@@ -135,11 +136,18 @@ http://stackoverflow.com/a/34696029/383904
    All above was mainly to get it working :)
    CSSgal CUSTOM STYLES / OVERRIDES HERE: */
 
+#s11, #s22, #s33, #s44{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+
 .CSSgal{
 	color: #fff;	
 	text-align: center;
 }
-.CSSgal .slider h2 {
+.CSSgal .slider-show h2 {
 	margin-top: 40vh;
 	font-weight: 200;
 	letter-spacing: -0.06em;
@@ -153,7 +161,7 @@ http://stackoverflow.com/a/34696029/383904
 	text-decoration: none;
 }
 
-.CSSgal .slider img
+.CSSgal .slider-show img
 {
     object-fit: contain;
 }

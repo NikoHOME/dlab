@@ -30,8 +30,8 @@ bool defaultHandler(Cgi cgi)
 		case "/":
 			cgi.write(webHome);
 			break;
-		case "/kolonie":
-			cgi.write(webKolonie);
+		case "/warsztaty":
+			cgi.write(webWarsztaty);
 			break;
 		case "/minecraft":
 			cgi.write(webMinecraft);
