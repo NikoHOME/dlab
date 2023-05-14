@@ -16,7 +16,8 @@ void handle(Cgi cgi)
 		"/static/img/".serveStaticFileDirectory,
 		"/static/ppl/".serveStaticFileDirectory,
 		"/static/sesja/".serveStaticFileDirectory,
-		"/static/js/".serveStaticFileDirectory
+		"/static/js/".serveStaticFileDirectory,
+		"/google39f959a444f55869.html".serveStaticFile
 	)) return;
 	if(defaultHandler(cgi)) return;
 	cgi.write("Internal Error");
