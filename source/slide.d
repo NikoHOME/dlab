@@ -1,51 +1,27 @@
 module dlab.slide;
 
 import elemi;
+import std.conv;
+import std.format;
+import std.range;
+import std.algorithm;
 
 immutable auto slideDOC = elem!"div"(
     attr("class") = "CSSgal",
-    elem!"a"(
-        attr("id") = "s11",
-    ),
-    elem!"a"(
-        attr("id") = "s22",
-    ),
-    elem!"a"(
-        attr("id") = "s33",
-    ),
-    elem!"a"(
-        attr("id") = "s44",
-    ),
-    elem!"s"(
-        attr("id") = "s1",
-    ),
-    elem!"s"(
-        attr("id") = "s2",
-    ),
-    elem!"s"(
-        attr("id") = "s3",
-    ),
-    elem!"s"(
-        attr("id") = "s4",
-    ),
+    iota(1, 5)
+        .map!(i => elem!"div"(
+            attr("id") = text("s", i, i)
+        )),
+
     elem!"div"(
         attr("class") = "slider-show",
-        elem!"img"(
-            attr("src") = "static/sesja/homePhoto1.JPG",
-            attr("alt") = "logo"
-        ),	
-        elem!"img"(
-            attr("src") = "static/sesja/homePhoto2.JPG",
-            attr("alt") = "logo"
-        ),
-        elem!"img"(
-            attr("src") = "static/sesja/homePhoto3.JPG",
-            attr("alt") = "logo"
-        ),		
-        elem!"img"(
-            attr("src") = "static/sesja/homePhoto4.JPG",
-            attr("alt") = "logo"
-        ),	
+        
+        iota(1, 5)
+            .map!(j => elem!"img"(
+                attr("alt") = "logo",
+                attr("src") = format!"static/sesja/homePhoto%s.JPG"(j),
+            )),
+        
         elem!"div"(
             elem!"h2"( "Pure"),
         ),
