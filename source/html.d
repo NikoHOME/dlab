@@ -176,7 +176,12 @@ immutable webHome = text(
     Element.HTMLDoctype,
     elem!"html"(
 		elem!"head"(
-			elem!"title"("Language Laboratories • - szkoła językowa, warsztaty wakacyjne i kursy angielskiego w świecie Minecraft"),
+			elem!"title"("Language Laboratories • - szkoła językowa, warsztaty wakacyjne i korepetycje z angielskiego w świecie Minecraft"),
+			elem!"meta"(
+				attr("name") = "description",
+				attr("content") = "Szkoła językowa Language Laboratories, Lanlab - współpracujemy od lat z doświadczonymi ekspertami. 
+				Kursy stacjonarne i online. Wprowadzamy innowacyjne sposoby nauczania. Warsztay wakacyjne oraz korepetycje w świecie Minecraft",
+			),
 			headDOC,
 		),
 
@@ -354,7 +359,15 @@ const string [2][] kontaktList =
 
 
 immutable minecraftHeadDOC = elems(
-	elem!"title"("Kursy angielskiego w świecie gry Minecraft - Language Laboratories •"),
+	elem!"title"("Korepetycje z angielskiego w świecie gry Minecraft - Language Laboratories •"),
+	elem!"meta"(
+		attr("name") = "description",
+		attr("content") = "Jedyne sprawdzone online korepetycje językowe w świecie gry Minecraft. Twoje dzieci bez problemów opanują język angielski poprzez zabawę",
+	),
+	elem!"meta"(
+		attr("name") = "keywords",
+		attr("content") = "minecraft, angielski, korki, korepetycje, gra, zabawa, nauka, język, online",
+	),
 );
 
 immutable warsztatyHeadDOC = elems(
