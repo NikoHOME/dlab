@@ -151,7 +151,8 @@ immutable navbarDOC = elem!"nav"(
 	)
 );
 
-immutable headDOC = elem!"head"(
+
+immutable headDOC = elems(
 
 	elemTrusted("
 	<!-- Google Tag Manager -->
@@ -162,7 +163,6 @@ immutable headDOC = elem!"head"(
 	})(window,document,'script','dataLayer','GTM-PSSBSCZ');</script>
 	<!-- End Google Tag Manager -->"),
 	
-	elem!"title"("Language Laboratories •"),
 	elemLink("icon", "/static/img/favicon.png"),
 	elemLink("stylesheet", "/static/css/master.css"),
 	elemLink("stylesheet", "/static/css/style-light.css", "cssLight"),
@@ -175,7 +175,11 @@ immutable headDOC = elem!"head"(
 immutable webHome = text(
     Element.HTMLDoctype,
     elem!"html"(
-        headDOC,
+		elem!"head"(
+			elem!"title"("Language Laboratories • - szkoła językowa, warsztaty wakacyjne i kursy angielskiego w świecie Minecraft"),
+			headDOC,
+		),
+
         elem!"body"(
             attr("class") = ["body ", "body-theme"],
             navbarDOC,
@@ -327,10 +331,10 @@ immutable webHome = text(
 
 
 
-immutable webMinecraft = page(minecraftDOC, "Minecraft nauka angielskiego",   inputList);
-immutable webWarsztaty = page(testDOC, "Warsztaty Mind-Craft",  inputList);
-immutable webKontakt = page(kontaktDOC, "Kontakt",  inputList);
-immutable webWymagania = page(specDOC, "Wymagania sprzętowe", inputList);
+immutable webMinecraft = page(minecraftDOC, minecraftHeadDOC, "Minecraft nauka angielskiego", inputList);
+immutable webWarsztaty = page(testDOC, warsztatyHeadDOC, "Warsztaty Mind-Craft",  inputList);
+immutable webKontakt = page(kontaktDOC, kontaktHeadDOC, "Kontakt",  inputList);
+immutable webWymagania = page(specDOC, wymaganiaHeadDOC, "Wymagania sprzętowe", inputList);
 
 const string[2][][] inputList =
 [
@@ -347,6 +351,25 @@ const string [2][] kontaktList =
 [
     ["/kontakt", "Kontakt"],
 ];
+
+
+immutable minecraftHeadDOC = elems(
+	elem!"title"("Kursy angielskiego w świecie gry Minecraft - Language Laboratories •"),
+);
+
+immutable warsztatyHeadDOC = elems(
+	elem!"title"("Wakacyjne warsztaty z językiem angielskim - Language Laboratories •"),
+);
+
+immutable kontaktHeadDOC = elems(
+	elem!"title"("Informacje kontaktowe - Language Laboratories •"),
+);
+
+immutable wymaganiaHeadDOC = elems(
+	elem!"title"("Wymagania sprzętowe - Language Laboratories •"),
+);
+
+
 
 
 

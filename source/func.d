@@ -72,12 +72,15 @@ Element header(string title)
     );
 }
 
-string page(Element inputDocument, string pageTitle, const string[2][][] listInput...)
+string page(Element inputDocument, Element inputHead, string pageTitle, const string[2][][] listInput...)
 {
     return text(
         Element.HTMLDoctype,
         elem!"html"(
-            headDOC,
+            elem!"head"(
+                inputHead,
+                headDOC,
+            ),
             elem!"body"(
                 attr("class") = ["body ", "body-theme"],
                 navbarDOC,
