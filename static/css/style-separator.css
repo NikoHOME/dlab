@@ -10,8 +10,10 @@
 
 .home-anchor1, .home-anchor2, .home-anchor3{
     position: absolute;
-    width: 5%;
-    margin-top: 650px;
+    left: 0;
+    right: 0;
+    /* width: 5%;
+    margin-top: 650px; */
     height: 100px;
     z-index: 1;
     align-items: center;
@@ -34,15 +36,15 @@
 }
 */
 .home-anchor1{
-    left: 14%;
+    /* left: 14%; */
 }
 
 .home-anchor2{
-    left: 48%;
+    /* left: 48%; */
 }
 
 .home-anchor3{
-    right: 14%;
+    /* right: 14%; */
 }
 
 .even-column img {
@@ -86,8 +88,8 @@
 
 @media only screen and (max-width: 1024px) {
     .home-anchor1, .home-anchor2, .home-anchor3{
-        left: 47.5%;
-        right: 47.5%;
+        /* left: 47.5%;
+        right: 47.5%; */
     }
     .home-anchor2{
         top: 800px;

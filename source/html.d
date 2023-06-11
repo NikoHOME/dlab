@@ -196,50 +196,65 @@ immutable webHome = text(
 				elem!"div"(
 					attr("class") = "home-anchor1",
 					elem!"a"(
-						attr("class") = "link-button",
-						elem!"span"("Więcej",),
-						elem!"svg"(
-							attr("viewBox") = "-5 -5 110 110",
-							attr("preserveAspectRatio") = "none",
-							attr("aria-hidden") = "true",
-							elem!"path"(
-								attr("d") = "M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0",
-							),
-						),
-						attr("href") = "/#homeWarsztaty",
+						attr("class") = "slideImgTitleSmall",
+						attr("href") = "/#homeMinecraft",
+						"Mine & Learn - Angielski",
 					),
+					// elem!"a"(
+					// 	attr("class") = "link-button",
+					// 	elem!"span"("Więcej",),
+					// 	elem!"svg"(
+					// 		attr("viewBox") = "-5 -5 110 110",
+					// 		attr("preserveAspectRatio") = "none",
+					// 		attr("aria-hidden") = "true",
+					// 		elem!"path"(
+					// 			attr("d") = "M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0",
+					// 		),
+					// 	),
+					// 	attr("href") = "/#homeWarsztaty",
+					// ),
 				),
 				elem!"div"(
 					attr("class") = "home-anchor2",
 					elem!"a"(
-						elem!"span"("Więcej",),
-						attr("class") = "link-button",
-						elem!"svg"(
-							attr("viewBox") = "-5 -5 110 110",
-							attr("preserveAspectRatio") = "none",
-							attr("aria-hidden") = "true",
-							elem!"path"(
-								attr("d") = "M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0",
-							),
-						),
-						attr("href") = "/#homeMinecraft",
+						attr("class") = "slideImgTitleSmall",
+						attr("href") = "/#homeWarsztaty",
+						"Warsztaty wakacyjne - Angielski",
 					),
+					// elem!"a"(
+					// 	elem!"span"("Więcej",),
+					// 	attr("class") = "link-button",
+					// 	elem!"svg"(
+					// 		attr("viewBox") = "-5 -5 110 110",
+					// 		attr("preserveAspectRatio") = "none",
+					// 		attr("aria-hidden") = "true",
+					// 		elem!"path"(
+					// 			attr("d") = "M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0",
+					// 		),
+					// 	),
+					// 	attr("href") = "/#homeMinecraft",
+					// ),
 				),
 				elem!"div"(
 					attr("class") = "home-anchor3",
 					elem!"a"(
-						attr("class") = "link-button",
-						elem!"span"("Więcej",),
-						elem!"svg"(
-							attr("viewBox") = "-5 -5 110 110",
-							attr("preserveAspectRatio") = "none",
-							attr("aria-hidden") = "true",
-							elem!"path"(
-								attr("d") = "M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0",
-							),
-						),
+						attr("class") = "slideImgTitleSmall",
 						attr("href") = "/#homeStacjonarne",
-					),				
+						"Zajęcia Stacjonarne",
+					),
+					// elem!"a"(
+					// 	attr("class") = "link-button",
+					// 	elem!"span"("Więcej",),
+					// 	elem!"svg"(
+					// 		attr("viewBox") = "-5 -5 110 110",
+					// 		attr("preserveAspectRatio") = "none",
+					// 		attr("aria-hidden") = "true",
+					// 		elem!"path"(
+					// 			attr("d") = "M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0",
+					// 		),
+					// 	),
+					// 	attr("href") = "/#homeStacjonarne",
+					// ),				
 				),
 
 				elem!"div"(

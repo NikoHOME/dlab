@@ -1,16 +1,20 @@
 .offer {
     height: 900px;
     margin-top: auto;
-    padding-top: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     margin-bottom: auto;
     width: 100%;
+    position: relative;
 }
 
 .offer-divider {
     margin: 0;
     height: 50px;
-    border-top: 1px solid black;
+    position: relative;
+    /* border-top: 1px solid black; */
 }
+
 
 
 .offer-img img {
@@ -25,6 +29,45 @@
  /*   width: 30%; */
     box-sizing: border-box;  
     padding-left: 25px;
+}
+
+.offer::before {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    bottom: 100px;
+    right: 0;
+    background: url('/static/img/dirtBlank2.png');
+    background-size: 200px;
+    /* background-color: rgb(255, 255, 255); */
+    content: "";
+    z-index: -2;
+}
+
+.offer-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: url('/static/img/dirtTransTop2.png');
+    background-size: 200px;
+    /* background-color: rgb(255, 255, 255); */
+    content: "";
+    z-index: -1;
+}
+
+.offer-bottom{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100px;
+    background: url('/static/img/dirtTransBottom2.png');
+    background-size: 200px;
+    /* background-color: rgb(255, 255, 255); */
+    content: "";
+    z-index: -1;
 }
 
 

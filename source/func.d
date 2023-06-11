@@ -129,9 +129,9 @@ Element offerSection(string anchor, string image, bool isLeft, const Element[] c
         attr("class") = "offer-divider"
     );
     if(isLeft)
-        output ~= attr("class") = ["wrap35","wrap-right","offer", "offer-left"];
+        output ~= attr("class") = ["wrap35", "wrap-right", "offer", "offer-left"];
     else
-        output ~= attr("class") = ["wrap35","wrap-left","offer", "offer-right"];
+        output ~= attr("class") = ["wrap35", "wrap-left", "offer", "offer-right"];
 
     output ~= elem!"a"(
         attr("class") = "anchor",
@@ -150,6 +150,13 @@ Element offerSection(string anchor, string image, bool isLeft, const Element[] c
         content
     );
 
+    output ~= elem!"div"(
+        attr("class") = "offer-top",
+    );
+
+    output ~= elem!"div"(
+        attr("class") = "offer-bottom",
+    );
 
     return output;
 }

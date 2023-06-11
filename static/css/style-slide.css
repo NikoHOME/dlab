@@ -128,8 +128,63 @@ http://stackoverflow.com/a/34696029/383904
 #s22:target ~ .slider-show {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
 #s33:target ~ .slider-show {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
 #s44:target ~ .slider-show {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+
+
+
+
+#s11:target ~ .slideImg1Title {display: block;}
+#s22:target ~ .slideImg2Title {display: block;}
+#s33:target ~ .slideImg3Title {display: block;}
+#s44:target ~ .slideImg4Title {display: block;}
+
 /* More slides? Add here more rules */
 
+/* .slideImg1Title .slideImg2Title .slideImg3Title .slideImg4Title {
+	visibility: hidden;
+} */
+
+.slideImgTitle {
+	display: none;
+	position: absolute;
+	left: 100px;
+	right: 100px;
+	top: 415px;
+	color: white;
+	font-size: 50px;
+	z-index: 100;
+
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.418);
+	color: #333333;
+	padding: 2px 6px 2px 6px;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-left: 1px solid #CCCCCC;
+} 
+
+.slideImgTitleSmall {
+	display: block;
+	position: absolute;
+	color: white;
+	font-size: 40px;
+	z-index: 100;
+
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.418);
+	color: #333333;
+	padding: 2px 6px 2px 6px;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-left: 1px solid #CCCCCC;
+}
+
+.slideImg1Title {display: block;}
+
+
+
+#s22:target ~ .slideImg1Title, #s33:target ~ .slideImg1Title, #s44:target ~ .slideImg1Title {display: none !important;}
 
 /* YOU'RE THE DESIGNER! 
    ____________________
@@ -153,8 +208,9 @@ http://stackoverflow.com/a/34696029/383904
 	letter-spacing: -0.06em;
 	word-spacing: 0.2em;
 	font-size: 3em;
+	position: relative;
 }
-.CSSgal a {
+.CSSgal .link {
 	border-radius: 50%;
 	margin: 0 3px;
 	color: rgba(0,0,0,0.8);

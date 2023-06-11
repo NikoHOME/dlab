@@ -87,3 +87,11 @@ hr.solid-theme {
   background-color: rgb(31, 34, 81);
   color: white;
 }
+
+/* .offer::before {
+  background-color: rgb(255, 255, 255);
+} */
+
+.offer-botoom .offer-top .offer::before {
+  background-color: black;
+}

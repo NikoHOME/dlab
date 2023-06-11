@@ -2,15 +2,15 @@
 
 function manageModes()
 {
-    if(window.sessionStorage.isDark=="true")
+    if(window.localStorage.isDark=="true")
     {
         swapCSS(true);
-        window.sessionStorage.isDark="false";
+        window.localStorage.isDark="false";
     }
     else
     {
         swapCSS(false);
-        window.sessionStorage.isDark="true";
+        window.localStorage.isDark="true";
     }
 
 }
@@ -18,14 +18,18 @@ function manageModes()
 
 $(window).on('load',function() {
 
+    if (window.localStorage.getItem("isDark") === null)
+    {
+        window.localStorage.isDark=="true"
+    }
     
-    if(window.sessionStorage.isDark=="true") 
+    if(window.localStorage.isDark=="true") 
     {
         if( !($( "#checkBox1" ).is(":checked")) || !($( "#checkBox2" ).is(":checked")))  
         {
             $("#checkBox1").prop('checked', 'checked');
             $("#checkBox2").prop('checked', 'checked');
-            window.sessionStorage.isDark="true";
+            window.localStorage.isDark="true";
             swapCSS(false);
 
         }
@@ -40,7 +44,7 @@ $(window).on('load',function() {
         {
             $("#checkBox1").removeAttr('checked');
             $("#checkBox2").removeAttr('checked');
-            window.sessionStorage.isDark="false";
+            window.localStorage.isDark="false";
             swapCSS(true);
         }
     }
