@@ -49,11 +49,12 @@ $(window).on('load',function() {
 
 function swapCSS(cond)
 {
-    var cssStyle = $("[id^=css]");
+    var cssLight = $("[id^=cssLight]");
+    var cssDark = $("[id^=cssDark]");
     if(cond==true) 
     {
-        cssStyle.attr('href', "/static/css/style-light.css");
-        cssStyle.attr('id', "cssDark");
+        cssLight.attr('rel', "stylesheet");
+        cssDark.attr('rel', "stylesheet alternate");
         $('#modeImg1').attr('src', '/static/img/sun.png');
         $('#modeImg2').attr('src', '/static/img/sun.png');
         $("#checkBox1").removeAttr('checked');
@@ -61,8 +62,8 @@ function swapCSS(cond)
     }
     else 
     {
-        cssStyle.attr('href', "/static/css/style-dark.css");
-        cssStyle.attr('id', "cssLight");
+        cssLight.attr('rel', "stylesheet alternate");
+        cssDark.attr('rel', "stylesheet");
         $('#modeImg1').attr('src', '/static/img/moon.png');
         $('#modeImg2').attr('src', '/static/img/moon.png');
         $("#checkBox1").prop('checked', 'checked');

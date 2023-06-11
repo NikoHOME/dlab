@@ -166,6 +166,7 @@ immutable headDOC = elems(
 	elemLink("icon", "/static/img/favicon.png"),
 	elemLink("stylesheet", "/static/css/master.css"),
 	elemLink("stylesheet", "/static/css/style-light.css", "cssLight"),
+	elemLink("stylesheet alternate", "/static/css/style-dark.css", "cssDark"),
 	elem!"script"(attr("src") = "/static/js/jquery-1.11.2.min.js"),
 	elem!"script"(attr("src") = "/static/js/main.js"),
 	Element.MobileViewport,
@@ -189,35 +190,6 @@ immutable webHome = text(
             attr("class") = ["body ", "body-theme"],
             navbarDOC,
             header("Lanlab"),
-/*
-			elem!"div"(
-				attr("class") = "home-banner",
-				elem!"div"(attr("class") = "home-anchor1"),
-				elem!"div"(attr("class") = "home-anchor2"),
-				elem!"div"(attr("class") = "home-anchor3"),
-				elem!"div"(
-					attr("class") = "home-column1",
-					elem!"img"(
-						attr("src") = "static/img/logo.png",
-						attr("alt") = "logo"
-                	),
-				),
-				elem!"div"(
-					attr("class") = "home-column2",
-					elem!"img"(
-						attr("src") = "static/img/screenshot.png",
-						attr("alt") = "logo"
-                	),				
-				),
-				elem!"div"(
-					attr("class") = "home-column3",
-					elem!"img"(
-						attr("src") = "static/img/favicon.png",
-						attr("alt") = "logo"
-                	),				
-				),
-			),
-			*/
 			
 			elem!"div"(
 				attr("class") = "wrap-even",
