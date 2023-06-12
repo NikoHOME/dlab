@@ -30,10 +30,26 @@ immutable auto offerMinecraft1Content = [
             ),
         )
     ),
-    elem!"a"(
-        attr("href") = "/minecraft",
-        "Więcej",
-    )
+    // elem!"a"(
+    //     attr("href") = "/minecraft",
+    //     "Więcej",
+    // ),
+    elem!"div"(
+        attr("class") = "link-container",
+        elem!"a"(
+            elem!"span"("Więcej",),
+            attr("class") = "link-button",
+            elem!"svg"(
+                attr("viewBox") = "-5 -5 110 110",
+                attr("preserveAspectRatio") = "none",
+                attr("aria-hidden") = "true",
+                elem!"path"(
+                    attr("d") = "M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0",
+                ),
+            ),
+            attr("href") = "/minecraft",
+        ),
+    ),
 ];
 immutable auto offerMinecraft2DOC = offerSection("homeWarsztaty", "/static/sesja/homeWarsztaty2.JPG", true, offerMinecraft2Content);
 immutable auto offerMinecraft2Content = [
@@ -58,9 +74,25 @@ immutable auto offerMinecraft2Content = [
             ),
         )
     ),
-    elem!"a"(
-        attr("href") = "/warsztaty",
-        "Więcej",
+    // elem!"a"(
+    //     attr("href") = "/warsztaty",
+    //     "Więcej",
+    // ),
+    elem!"div"(
+        attr("class") = "link-container",
+        elem!"a"(
+            elem!"span"("Więcej",),
+            attr("class") = "link-button",
+            elem!"svg"(
+                attr("viewBox") = "-5 -5 110 110",
+                attr("preserveAspectRatio") = "none",
+                attr("aria-hidden") = "true",
+                elem!"path"(
+                    attr("d") = "M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0",
+                ),
+            ),
+            attr("href") = "/warsztaty",
+        ),
     ),
 ];
 
@@ -69,21 +101,21 @@ immutable auto offerMinecraft3Content = [
     elem!"h2"(
         "Zajęcia stacjonarne"
     ),
-    elem!"h3"(
-        "Czas trwania lekcji 60 minut"
-    ),
-    elem!"p"(
-        "Cele zajęć",
-        elem!"ol"(
-            elem!"li"(
-                "Sprawna komunikacja dwustronna w języku angielskim"
-            ),
-            elem!"li"(
-                "Umiejętność prowadzenia luźnej konwersacji"
-            ),
-            elem!"li"(
-                "Rozwój kreatywnego myślenia i umiejętności planowania"
-            ),
-        )
-    ),
+    // elem!"h3"(
+    //     "Czas trwania lekcji 60 minut"
+    // ),
+    // elem!"p"(
+    //     "Cele zajęć",
+    //     elem!"ol"(
+    //         elem!"li"(
+    //             "Sprawna komunikacja dwustronna w języku angielskim"
+    //         ),
+    //         elem!"li"(
+    //             "Umiejętność prowadzenia luźnej konwersacji"
+    //         ),
+    //         elem!"li"(
+    //             "Rozwój kreatywnego myślenia i umiejętności planowania"
+    //         ),
+    //     )
+    // ),
 ];
