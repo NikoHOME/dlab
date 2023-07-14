@@ -1,3 +1,3 @@
 # dlab
 
-Buisness website and webserver written in D lang.
+Business website and webserver written in D lang.
